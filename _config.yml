@@ -1,0 +1,22 @@
+# Site settings
+title: #Your title Here
+email: #Your email here
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti reprehenderit quidem voluptatum, velit, delectus aperiam. Animi fugiat natus, dicta architecto! Possimus ipsa ducimus fugit ab quidem repudiandae, animi placeat deleniti.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://username.github.io" # the base hostname & protocol for your site
+subtitle: # Your description
+keywords: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus sequi nobis pariatur architecto debitis? Deserunt, perferendis aspernatur ab expedita! Illum voluptatem modi soluta expedita aperiam asperiores magni, voluptate sed odit." 
+		#Your keywords to web indexing
+twitter_username: dikiaap # Your twitter username
+github_username:  dikiaap # Your github username
+simple_search: http://google.com/search
+# Build settings
+markdown: kramdown
+author: dikiaap # Your site author
+
+#gems:
+# - octopress-date-format
+# - octopress-social
+# - octopress-quote-tag
+# - octopress-solarized
+#My gem

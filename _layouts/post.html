@@ -1,0 +1,15 @@
+---
+layout: layout
+---
+<div class="post">
+
+  <header class="post-header">
+    <span itemprop="name"><h1 class="post-title"><center>{{ page.title }}</center></h1></span>
+    <p class="post-meta"><center>{{ page.date | date: "%-d %b %Y" }}{% if page.author %} • <a href="https://github.com/dikiaap">{{ page.author }}</a> {% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}  • <img src="{{ site.baseurl }}/dikiaap.png" width="18" height="18"></center></p>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+	</div>
+</div>
