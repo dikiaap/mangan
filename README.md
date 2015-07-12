@@ -1,6 +1,8 @@
 # Mangan Obj
 Flat theme like laravel - jekyll theme
 
+![Alt text](https://lh3.googleusercontent.com/-ofIoKxo5Dkw/VZo2c5RD9hI/AAAAAAAAAbo/DQMU0_Y1wFM/s800-Ic42/home.PNG)
+
 # How to use
 
 Edit your configuration or replace the file on your jekyll or octopress site
@@ -12,11 +14,7 @@ Edit your configuration or replace the file on your jekyll or octopress site
  * Add footer modification
  * Add photo profile on post
  * Modification post on index
- * Please pull request and issues for building this theme
-
-# Screenshot
-
-![Alt text](https://lh3.googleusercontent.com/-mgGcfiNMu0c/VZZSeFugypI/AAAAAAAAAXs/4ZB-JXkpJww/s800/large.png)
+ * Contribute for building this theme
 
 # Demo
 
