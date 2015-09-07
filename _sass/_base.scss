@@ -12,11 +12,11 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $open-sans;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    color: #3D3D3D;
+    color: $dark-color-aap;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
@@ -39,8 +39,6 @@ img {
     vertical-align: middle;
 }
 
-
-
 /**
  * Figures
  */
@@ -51,8 +49,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -68,8 +64,6 @@ li {
     }
 }
 
-
-
 /**
  * Headings
  */
@@ -77,41 +71,39 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-
-
 /**
  * Links
  */
 a {
-    color: #f4645f;
+    color: $link-color;
     text-decoration: none;
 
     &:visited {
-        color: #f4645f;
+        color: $link-color;
     }
 
     &:hover {
-        color: #3f3f3f;
+        color: $link-hover-color;
         text-decoration: none;
     }
 }
 
 hr {
-    border-top: 1px solid #f0523f;
-    border-bottom: 1px solid #f0523f;
-    border-left: 1px solid #f0523f;
-    border-right: 1px solid #f0523f;
+    border-top: 1px solid $lara-color;
+    border-bottom: 1px solid $lara-color;
+    border-left: 1px solid $lara-color;
+    border-right: 1px solid $lara-color;
 }
 
 /**
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid #f0523f;
+    color: #757575;
+    border-left: 4px solid $lara-color;
     padding-left: $spacing-unit / 2;
     font-size: 16px;
-    letter-spacing: -1px;
+    letter-spacing: 0.1px;
     font-style: none;
 
     > :last-child {
@@ -119,21 +111,20 @@ blockquote {
     }
 }
 
-
-
 /**
  * Code formatting
  */
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
+    font-size: 14px;
+    border: 1px solid #f0f0f0;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #f8f8f8;
+    color: #2E2E2E;
 }
 
 code {
-    padding: 1px 5px;
+    padding: 3px 5px;
 }
 
 pre {
@@ -147,11 +138,9 @@ pre {
     }
 }
 
-
-
 /**
  * Wrapper
- */
+ */ 
 .wrapper {
     max-width: calc(1160px);
     margin-right: auto;
@@ -173,7 +162,22 @@ pre {
     }   
 }
 
+.wrapper-fit {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
 
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
 
 /**
  * Clearfix
@@ -187,8 +191,6 @@ pre {
     }
 }
 
-
-
 /**
  * Icons
  */
@@ -196,12 +198,12 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 39px;
+        height: 39px;
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $github-color; 
         }
     }
 }

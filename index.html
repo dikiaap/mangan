@@ -1,37 +1,45 @@
 ---
 layout: default
 ---
-<div style="height:51px;"></div>
-<div class="home">
-   <div class="content-col-wrapper">
-      <div class="content-col  content-col-1">
+      <div class="space"></div>
+      <div class="home">
+        <div class="content-col-wrapper">
+          <div class="content-col">
+            <div class="dummy">
+              Hello Hi! Aku Diki Andriansyah A-P. I loves building things with code. <br>
+              Brom [ ] ini adalah sebuah blog room, banyak juga yang aku tulis disini. <br>
+              Aku juga aktif di diki1aap#gmail.com atau lebih lengkap baca aja di 
+              <a href="/me" target="_blank">Me</a>. <br><br>
+              Fun pict ... <br>
 
-          <div style="color: #505050; font-family: 'Roboto', sans-serif; font-weight:400; font-size:21px; letter-spacing: -1px;">
-            <!-- Its my description content, you can change it -->
-            Brom [ ] sebuah blog yang menyajikan tutorial, info, dan tips secara praktis
-            dengan artikel yang telah dibuat secara efisien. Serta artikel bisa dibaca sampai akhir dengan suasana santai.
-            Mau buat artikel di sini? Ingin <a href="#">Berkontribusi</a>?
-          </div>
-          <p></p>
-            <ul class="post-list">
-              {% for post in site.posts %}
-                <div id="menu" style="height:30px; width:670px; float:left; border-bottom: 1px dashed #eee; padding-top: 5px;">
+              <div class="photos">
+                <a href="https://instagram.com/p/5UlHS9hvIC/" class="p1 photo" target="_blank"><img alt="Menjelang sore, hangatkan badan." src="https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/e35/11417248_883968801640285_1012760330_n.jpg"></a>
+                <a href="https://instagram.com/p/4_kouzhvE7/" class="p2 photo" target="_blank"><img alt="Saya potret di rumah kakek - nenek saya." src="https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/e35/10175315_1638728756343498_1725187869_n.jpg"></a>
+                <a href="https://instagram.com/p/2_aFHdBvLh/" class="p3 photo" target="_blank"><img alt="Customize Desktop LXDE - 2015." src="https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/e15/11370977_1432959773689898_875902311_n.jpg"></a>
+                <a href="https://instagram.com/p/4_dhCahvL7/" class="p4 photo" target="_blank"><img alt="I started playing bass 10 years ago." src="https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/e35/11417233_496592073825248_1361156264_n.jpg"></a>
+                <div class="caption c1">Menjelang sore, hangatkan badan.</div>
+                <div class="caption c2">Saya potret di rumah kakek - nenek saya.</div>
+                <div class="caption c3">Customize Desktop LXDE - 2015.</div>
+                <div class="caption c4">Daun sejuk di pagi hari.</div>
+              </div><br>
+
+              <div class="dummy blogpost">
+                Post blog.
+              </div>
+            </div><p></p><p></p>
+              <ul class="post-list">{% for post in paginator.posts %}
+                <div class="titlepost">
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </div>
-
-                <div id ="content" style="height:30px; width:100px; float:left;border-bottom: 1px dashed #eee; padding-top: 5px;">
+                <div class="datepost">
                   <span class="post-meta">{{ post.date | date: "%-d %b %Y" }}</span>
-                </div>
-
-              {% endfor %}
-            </ul>
+                </div>{% endfor %}
+              </ul>
           </div>
-      
-      <div class="content-col  content-col-2">
-          {% include tweet.html %}
-          <p>
-          {% include octocard.html %}
+        </div>
+        <div class="pagination">{% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous"><b>Balik Lagi</b></a>{% else %}{% endif %}{% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next"><b>Lanjut</b></a>{% else %}{% endif %}
+        </div>
       </div>
-    </div>
-</div>
-</div>
+      <div class="space"></div>
