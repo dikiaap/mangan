@@ -1,7 +1,7 @@
 # Mangan Obj
 Flat theme like laravel - jekyll theme
 
-![Alt text](https://lh3.googleusercontent.com/-uqOsak8nWZw/VaG73AESPqI/AAAAAAAAAfQ/e4JSt_rwtQU/s800-Ic42/home.PNG)
+![Alt text](http://i.imgbox.com/HU4xkyAk.jpg)
 
 # How to use
 
