@@ -3,6 +3,7 @@ layout: {{ layout }}
 title: "{{ title }}"
 date: {{ date }}
 author: dikiaap
+sitemap: true
 keywords: ""
 description: ""
 ---

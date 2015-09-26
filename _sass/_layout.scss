@@ -11,16 +11,11 @@
 /**
  * Add new config
  */
-.space {
-    height: $spacing-unit;
-}
-
 .titlepost {
     height: $spacing-unit;
-    font-family: 'Lato', sans-serif;
+    font-family: $cutive;
     width: 90%;
     float:left;
-    border-bottom: 1px dashed #E1E2E3;
     padding-top: $spacing-unit / 6;
 }
 
@@ -52,6 +47,7 @@
     border-radius: 10px;
   }
 
+  &.p0:hover ~ .c0,
   &.p1:hover ~ .c1,
   &.p2:hover ~ .c2,
   &.p3:hover ~ .c3,
@@ -63,13 +59,14 @@
 .caption {
   display: none;
   top: 100%;
-  line-height: 1;
+  line-height: 1.1;
   font-size: 0.8em;
   position: absolute;
 }
 
 .datepost {
     height: $spacing-unit;
+    font-family: $vt323;
     width: 100px;
     float: left;
     border-bottom: 1px dashed #E1E2E3;
@@ -126,10 +123,9 @@
 
 .dummy {
     font-weight: 300;
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: -1px;
     margin-bottom: 3px;
-    letter-spacing: -0.4px;
     float: left;
     color: #505050;
     &,
@@ -142,21 +138,21 @@
 }
 
 .site-title {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $cutive;
     font-weight: 400;
     line-height: 115px;
     font-size: 36px;
     letter-spacing: -1px;
     margin-bottom: 0;
     margin-left: 4px;
-    float: left;
+    text-align:center;
     &,
     &:visited {
         color: #505050;
     }
 
     @include media-query($on-palm) {
-        font-family: 'Open Sans', sans-serif;
+        font-family: $cutive;
         font-size: 24px;
         font-weight: 600;
         line-height: 107px;
@@ -170,7 +166,7 @@
     }
 
     @include media-query($on-laptop) {
-        font-family: 'Open Sans', sans-serif;
+        font-family: $cutive;
         font-size: 24px;
         font-weight: 600;
         line-height: 107px;
@@ -189,7 +185,7 @@
  * Simple on {sites}/me/
  */
 .site-title-simple {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $cutive;
     font-weight: 400;
     font-size: 36px;
     letter-spacing: -1px;
@@ -201,7 +197,7 @@
     }
 
     @include media-query($on-palm) {
-        font-family: 'Open Sans', sans-serif;
+        font-family: $cutive;
         font-size: 24px;
         font-weight: 600;
         line-height: 107px;
@@ -214,7 +210,7 @@
     }
 
     @include media-query($on-laptop) {
-        font-family: 'Open Sans', sans-serif;
+        font-family: $cutive;
         font-size: 24px;
         font-weight: 600;
         letter-spacing: -1px;
@@ -231,8 +227,7 @@
  * Site nav
  */
 .site-nav {
-    float: right;
-    line-height: 120px;
+    line-height: 90px;
     margin-right: 10px;
 
     .menu-icon {
@@ -373,7 +368,8 @@
 
 .post-link {
     display: block;
-    font-size: 16px;
+    font-size: 17px;
+    font-family: $vt323;
 }
 
 /**
@@ -395,7 +391,7 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
-    font-family: 'Lato', sans-serif;
+    font-family: $cutive;
     h2 {
         font-size: 32px;
 

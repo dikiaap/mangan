@@ -1,6 +1,12 @@
 # Mangan Obj
 Flat theme like laravel - jekyll theme
 
+1.2 Version
+
+I say this is Geek theme. You can look [Brom [ ]](https://dikiaap.github.io)
+
+You can which old [1.0.1 Version](https://github.com/manganbiner/mangan-obj/releases/tag/v1.0.1). Like this :
+
 ![Alt text](http://i.imgbox.com/HU4xkyAk.jpg)
 
 # How to use

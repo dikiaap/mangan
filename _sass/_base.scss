@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $open-sans;
+    font-family: $cutive;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
@@ -116,6 +116,7 @@ blockquote {
  */
 pre,
 code {
+    font-family: $cutive;
     font-size: 14px;
     border: 1px solid #f0f0f0;
     border-radius: 3px;
@@ -142,7 +143,7 @@ pre {
  * Wrapper
  */ 
 .wrapper {
-    max-width: calc(1160px);
+    max-width: calc(850px);
     margin-right: auto;
     margin-left: auto;
     @extend %clearfix;
