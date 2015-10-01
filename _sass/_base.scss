@@ -15,7 +15,6 @@ body {
     font-family: $cutive;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
     color: $dark-color-aap;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -143,7 +142,7 @@ pre {
  * Wrapper
  */ 
 .wrapper {
-    max-width: calc(850px);
+    max-width: calc(700px);
     margin-right: auto;
     margin-left: auto;
     @extend %clearfix;
@@ -199,8 +198,8 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 39px;
-        height: 39px;
+        width: 29px;
+        height: 29px;
         vertical-align: middle;
 
         path {

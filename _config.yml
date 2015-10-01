@@ -12,7 +12,8 @@ simple_search: http://google.com/search
 markdown: kramdown
 author: dikiaap
 permalink: ":year/:month/:day/:title/"
-paginate: 7
+paginate: 5
 paginate_path: "/page/:num/"
 gems:
   - jekyll-sitemap
+  - jekyll-youtube

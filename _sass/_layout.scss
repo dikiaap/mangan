@@ -4,7 +4,6 @@
 .site-header {
     border-bottom: 1px solid #e8e8e8;
     min-height: 120px;
-    // Positioning context for the mobile navigation icon
     position: relative;
 }
 
@@ -15,8 +14,14 @@
     height: $spacing-unit;
     font-family: $cutive;
     width: 90%;
-    float:left;
+    float: left;
     padding-top: $spacing-unit / 6;
+}
+
+.big {
+    font-size: 18px;
+    background: url("/images/fun-line.png") 0 100% no-repeat;
+    background-size: 20px;
 }
 
 .photos,
@@ -42,8 +47,8 @@
 
   img {
     background-color: #f0f0f0;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
   }
 
@@ -79,6 +84,9 @@
     margin-right: 5px;
 }
 
+/*
+ * Content
+ */
 .content-col-wrapper {
     font-size: $spacing-unit / 2;
     color: #6C6C6C;
@@ -122,8 +130,7 @@
 }
 
 .dummy {
-    font-weight: 300;
-    font-size: 20px;
+    font-size: 17px;
     letter-spacing: -1px;
     margin-bottom: 3px;
     float: left;
@@ -139,13 +146,12 @@
 
 .site-title {
     font-family: $cutive;
-    font-weight: 400;
     line-height: 115px;
     font-size: 36px;
     letter-spacing: -1px;
     margin-bottom: 0;
     margin-left: 4px;
-    text-align:center;
+    text-align: center;
     &,
     &:visited {
         color: #505050;
@@ -154,7 +160,6 @@
     @include media-query($on-palm) {
         font-family: $cutive;
         font-size: 24px;
-        font-weight: 600;
         line-height: 107px;
         letter-spacing: -1px;
         margin-bottom: 0;
@@ -168,7 +173,6 @@
     @include media-query($on-laptop) {
         font-family: $cutive;
         font-size: 24px;
-        font-weight: 600;
         line-height: 107px;
         letter-spacing: -1px;
         margin-bottom: 0;
@@ -186,7 +190,6 @@
  */
 .site-title-simple {
     font-family: $cutive;
-    font-weight: 400;
     font-size: 36px;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -199,7 +202,6 @@
     @include media-query($on-palm) {
         font-family: $cutive;
         font-size: 24px;
-        font-weight: 600;
         line-height: 107px;
         letter-spacing: -1px;
         margin-bottom: 0;
@@ -212,7 +214,6 @@
     @include media-query($on-laptop) {
         font-family: $cutive;
         font-size: 24px;
-        font-weight: 600;
         letter-spacing: -1px;
         margin-bottom: 0;
         color: #f8f8f8;
@@ -313,12 +314,6 @@
     margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
 .footer-col-wrapper {
     font-size: 15px;
     color: #4B4B4B;
@@ -345,7 +340,19 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: $spacing-unit 0 0;
+}
+
+@include media-query($on-laptop) {
+    .page-content {
+        padding-bottom: $spacing-unit;
+    }
+}
+
+@include media-query($on-palm) {
+    .page-content {
+        padding-bottom: $spacing-unit;
+    }
 }
 
 .page-heading {
@@ -383,7 +390,6 @@
     font-size: 56px;
     letter-spacing: -1px;
     line-height: 1;
-    font-weight: 600;
     @include media-query($on-laptop) {
         font-size: 36px;
     }
