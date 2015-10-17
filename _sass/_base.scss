@@ -1,7 +1,7 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
@@ -9,7 +9,7 @@ dl, dd, ol, ul, figure {
 }
 
 /**
- * Basic styling
+ * Basic styling :#
  */
 body {
     font-family: $cutive;
@@ -17,6 +17,8 @@ body {
     line-height: $base-line-height;
     color: $dark-color-aap;
     background-color: $background-color;
+    margin: 0;
+    padding: 0;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -32,10 +34,18 @@ ul, ol, dl, figure,
 
 /**
  * Images
+ * img.displayed : ico for header links
  */
 img {
     max-width: 100%;
     vertical-align: middle;
+}
+
+img.displayed {
+    display: block;
+    margin: 40px auto;
+    width: 25px;
+    height: 25px;
 }
 
 /**
@@ -102,7 +112,6 @@ blockquote {
     border-left: 4px double #DEDEDE;
     font-size: 16px;
     letter-spacing: 0.1px;
-    font-style: none;
 
     > :last-child {
         margin-bottom: 0;
@@ -117,7 +126,7 @@ code {
     font-family: $cutive;
     font-size: 14px;
     border: 1px solid #f0f0f0;
-    border-radius: 3px;
+    border-radius: 1em;
     background-color: #f8f8f8;
     color: #2E2E2E;
 }

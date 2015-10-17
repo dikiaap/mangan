@@ -28,17 +28,12 @@
          /.-./.-.|               /.-.|.-.\
   -->
   <body>
-  <div class="page-content me">
-  	<div class="wrapper-fit">
-	<a class="site-title-simple" href="{{ site.baseurl }}/">
-		<div class="site-header-me">
-			<span class="big plusbig">Brom []</span>
-		</div>
-	</a>
+{% include header.html %}
+  <div class="page-content">
+    <div class="wrapper-fit">
 {{ content }}
     </div>
   </div>
-{% include footer.html %}
   <script type="text/javascript" src="{{ "/js/min.js" | prepend: site.baseurl }}"></script>
  </body>
 </html>
