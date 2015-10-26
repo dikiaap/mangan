@@ -1,11 +1,11 @@
 # Site settings
-title: Diki Andriansyah A P Blog - Stay Brom
+title: Diki Andriansyah Blog - Stay Brom
 email: diki1aap@gmail.com
-description: Ini sebuah blog room Diki Andriansyah A P yang saya kelola untuk membagikan tulisan dan aktivitas saya, seperti pengetahuan, pengamatan dan informasi di penulisan kode.
+description: "Ini sebuah blog room Diki Andriansyah yang saya kelola untuk membagikan tulisan dan aktivitas saya, seperti pengetahuan, pengamatan dan informasi di penulisan kode."
 baseurl: ""
 url: "https://dikiaap.github.io"
 subtitle: Brom brom code brom !!
-keywords: "Diki Andriansyah A P, Diki Andriansyah A P Blog, dikiaap, Diki Andriansyah Ananta Putra"
+keywords: "Diki Andriansyah, Diki Andriansyah Blog, dikiaap, Diki Andriansyah Ananta Putra"
 sosial_username: dikiaap
 simple_search: http://google.com/search
 # Build settings
