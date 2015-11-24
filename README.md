@@ -1,12 +1,16 @@
-# Mangan Obj
-A Jekyll theme - Light
+<h1 align="center">
+	<br>
+	<img width="400" src="http://i.imgur.com/jKPOX8C.png">
+	<br>
+	<br>
+</h1>
 
 # Introduction
-Geek theme, in new version 1.2 mangan-obj. You can look [Brom [ ]](https://dikiaap.github.io)
+Geek theme in new version 1.2
 
 ![image](http://i.imgur.com/JdphAWJ.png)
 
-Or you can which old [1.0.1 Version](https://github.com/manganbiner/mangan-obj/releases/tag/v1.0.1). User interface like this :
+Or you can which old version [1.0.1](https://github.com/manganbiner/mangan-obj/releases/tag/v1.0.1)
 
 ![image](http://i.imgbox.com/HU4xkyAk.jpg)
 
