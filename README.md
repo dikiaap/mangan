@@ -1,6 +1,4 @@
 # Introduction
-**Version 1.0**
-
 ![image](http://i.imgur.com/JdphAWJ.png)
 
 # How to use
