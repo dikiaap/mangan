@@ -16,4 +16,4 @@ paginate: 5
 paginate_path: "/page/:num/"
 gems:
   - jekyll-sitemap
-  #- jekyll-youtube
+  - jekyll-paginate
