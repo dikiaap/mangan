@@ -1,17 +1,11 @@
 /**
  * Site header
- * .site-header-me for personal info in url/me
  */
 .site-header {
     border-bottom: 1px solid #E5E5E5;
     position: relative;
     background-color: #F5F5F5;
     text-align: center;
-}
-
-.site-header-me {
-    text-align: center;
-    margin-top: 40px;
 }
 
 /**
@@ -29,8 +23,6 @@
         color: #161616;
         line-height: $base-line-height;
         font-size: 20px;
-        margin-right: 9px;
-        margin-left: 9px;
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
         }
@@ -227,10 +219,6 @@
     padding: $spacing-unit 0 0;
 }
 
-.page-content.me {
-    padding: 0 0;
-}
-
 @include media-query($on-laptop) {
     .page-content {
         padding-bottom: $spacing-unit;
@@ -365,18 +353,6 @@
     }
 }
 
-.post-title-me {
-    font-size: 26px;
-    font-family: $cutive;
-    letter-spacing: -1px;
-    line-height: 1;
-    text-align: center;
-    @include media-query($on-laptop) {
-        font-size: 26px;
-        text-align: center;
-    }
-}
-
 .post-line {
     font-size: 18px;
     background: url("/images/fun-line.png") 0 100% no-repeat;
@@ -397,73 +373,6 @@
 .post-content {
     margin-bottom: $spacing-unit;
     font-family: $cutive;
-}
-
-/**
- * Simple in url/me
- */
-.site-title-simple {
-    font-family: $cutive;
-    font-size: 36px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    width: 740px;
-    &,
-    &:visited {
-        color: #505050;
-    }
-
-    @include media-query($on-palm) {
-        font-family: $cutive;
-        font-size: 24px;
-        line-height: 107px;
-        letter-spacing: -1px;
-        margin-bottom: 0;
-        &,
-        &:visited {
-            color: #f8f8f8;
-        }
-    }
-
-    @include media-query($on-laptop) {
-        font-family: $cutive;
-        font-size: 24px;
-        letter-spacing: -1px;
-        margin-bottom: 0;
-        color: #f8f8f8;
-        &,
-        &:visited {
-            color: #f8f8f8;
-        }
-    }
-}
-
-/**
- * GitHub corners url/me
- */
-.github-corner:hover .octo-arm {
-    animation:octocat-wave 560ms ease-in-out;
-}
-
-@keyframes octocat-wave {
-    0%,100% {
-        transform: rotate(0);
-    }
-    20%,60% {
-        transform: rotate(-25deg);
-    }
-    40%,80% {
-        transform: rotate(10deg);
-    }
-}
-
-@media (max-width: 500px) {
-    .github-corner:hover .octo-arm {
-        animation: none;
-    }
-    .github-corner .octo-arm {
-        animation:octocat-wave 560ms ease-in-out;
-    }
 }
 
 /**
