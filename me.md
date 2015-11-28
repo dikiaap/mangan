@@ -9,18 +9,18 @@ Dan mulai kenal linux dari tahun 2012. Masih baru banget kan. Hehe. Sekarang mas
 ---
 ![Image]({{ site.baseurl }}/images/me.png)
 
-####**Rincian**
+####**`Rincian`**
 
 Saya **Diki Andriansyah**, biasanya di panggil **Andre**. Saya sedang menekuni di bidang **Penulis Kode**.
 Suka sekali menggunakan **Linux**.
 Skill sekarang mengarah ke **Web Developer**. Um ... Kalau ingin membuat website, langsung kontak saja ya ... Info kontak saya udah ada di bawah kok. Hehe. Melakukan hal yang dapat membantu orang lain dan berkontribusi di Open Source.
 
-####**Kode**
+####**`Kode`**
 
 Source code yang sering saya publikasikan berada di » 
 [**GitHub**](https://github.com/{{  site.sosial_username }}), [**BitBucket**](https://bitbucket.com/{{  site.sosial_username }}), [**GitLab**](https://gitlab.com/{{  site.sosial_username }})
 
-####**Temukan**
+####**`Temukan`**
 
 Kalau lewat **Email** [**{{ site.email }}**](mailto:{{ site.email }}) ya pasti boleh ... :) 
 Juga publikasi dan tentang portofolio bisnis ada di [**Linkedin**](https://www.linkedin.com/in/dikiaap/).

@@ -42,7 +42,6 @@ img {
 }
 
 img.displayed {
-    display: block;
     margin: 40px auto;
     width: 25px;
     height: 25px;
@@ -124,10 +123,7 @@ blockquote {
 pre,
 code {
     font-family: $cutive;
-    font-size: 14px;
-    border: 1px solid #f0f0f0;
-    border-radius: 1em;
-    background-color: #f8f8f8;
+    background-color: #EAEAEA;
     color: #2E2E2E;
 }
 
