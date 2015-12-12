@@ -3,7 +3,13 @@
 
 # How to use
 
-Edit your configuration or replace the file on your jekyll or octopress site
+Fork this repository and change name repostiory to yourusername.github.io
+
+`git clone https://github.com/username/yourusername.github.io.git`
+
+`cd yourusername.github.io`
+
+`jekyll serve`
 
 # What's in there?
 
@@ -20,4 +26,4 @@ Edit your configuration or replace the file on your jekyll or octopress site
 
 See the demo [here](https://dikiaap.github.io)
 
-If there is a configuration that you can not understand, you can visit [jekyllrb](http://jekyllrb.com)
+More feature, you can visit [jekyllrb](http://jekyllrb.com)
