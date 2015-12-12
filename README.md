@@ -3,7 +3,7 @@
 
 # How to use
 
-Fork this repository and change name repostiory to yourusername.github.io
+Fork this repository and change name repository to yourusername.github.io
 
 `git clone https://github.com/username/yourusername.github.io.git`
 
