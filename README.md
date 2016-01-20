@@ -1,5 +1,5 @@
 # Introduction
-![image](http://i.imgur.com/I2r1l3e.png)
+![image](http://i.imgur.com/m0e7Sta.png)
 
 # How to use
 
