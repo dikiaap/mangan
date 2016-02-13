@@ -1,7 +1,6 @@
-# Introduction
 ![image](http://i.imgur.com/m0e7Sta.png)
 
-# How to use
+# Install
 
 Fork this repository and change name repository to yourusername.github.io
 
