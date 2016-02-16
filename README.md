@@ -25,6 +25,6 @@ Fork this repository and change name repository to yourusername.github.io
 
 # Demo
 
-See the demo [here](https://dikiaap.github.io)
+See the demo [here](https://blog.dikiaap.id)
 
 More feature, you can visit [jekyllrb](http://jekyllrb.com)
