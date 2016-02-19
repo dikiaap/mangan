@@ -8,7 +8,7 @@ Fork this repository and change name repository to yourusername.github.io
 
 `cd yourusername.github.io`
 
-`gem install jekyll-paginate`
+`gem install jekyll-paginate jekyll-sitemap jemoji`
 
 `jekyll serve`
 
