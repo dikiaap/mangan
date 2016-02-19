@@ -1,18 +1,28 @@
-# Site settings
+# Site settings ...
+uri: dikiaap.id
+url: https://blog.dikiaap.id
+name: Diki Andriansyah
 title: Diki Andriansyah Blog - Stay Brom
-email: diki1aap@gmail.com
-description: "Ini sebuah blog room Diki Andriansyah yang saya kelola untuk membagikan tulisan dan aktivitas saya, seperti pengetahuan, pengamatan dan informasi di penulisan kode."
-baseurl: ""
-url: "https://dikiaap.github.io"
-subtitle: Brom brom code brom !!
-keywords: "Diki Andriansyah, Diki Andriansyah Blog, dikiaap, Diki Andriansyah Ananta Putra"
-sosial_username: dikiaap
-simple_search: http://google.com/search
-# Build settings
-markdown: kramdown
+email: hi@dikiaap.id
 author: dikiaap
-permalink: "write/:year/:month/:day/:title/"
+baseurl: ""
+timezone: Asia/Jakarta
+keywords: "Diki Andriansyah, Diki Andriansyah Blog, dikiaap, Diki Andriansyah Ananta Putra"
+description: "Hi! Saya Diki Andriansyah. Suka membangun sesuatu dengan code dan bekerja sebagai developer. Brom [] ini adalah sebuah blog room dan banyak bermacam-macam aktifitas yang saya tulis di sini."
+social_username: dikiaap
+secondary_social_username: dikiandriansyahap
+
+# Build settings ...
+sass:
+  style: compressed
+markdown: kramdown
+encoding: "utf-8"
 paginate: 5
+permalink: "write/:year/:month/:day/:title/"
 paginate_path: "/page/:num/"
+
+# Plugins ...
 gems:
   - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji

@@ -14,19 +14,19 @@
     <meta name="revisit-after" content="2 days">
     <meta name="language" content="Indonesian, English">
     <meta name="distribution" content="Global">
-    <meta property="og:site_name" content="Diki Andriansyah Blog">
+    <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
     <meta property="og:image" content="http://i.imgbox.com/FVXzVeXv.png">
-    <meta property="twitter:site" content="@dikiaap">
+    <meta property="twitter:site" content="@{{ site.social_username }}">
     <meta property="twitter:site:id" content="2667578047">
     <meta property="twitter:card" content="summary">
     <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="twitter:description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
     <meta property="twitter:image:src" content="http://i.imgbox.com/FVXzVeXv.png">
     <link href="{{ "/css/main.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
-    <link href="https://plus.google.com/+dikiandriansyahap" rel="author">
-    <link href="https://plus.google.com/+dikiandriansyahap" rel="publisher">
+    <link href="https://plus.google.com/+{{ site.secondary_social_username }}" rel="author">
+    <link href="https://plus.google.com/+{{ site.secondary_social_username }}" rel="publisher">
     <link href="/favicon.png" rel="icon">
     <link href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel="canonical">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
