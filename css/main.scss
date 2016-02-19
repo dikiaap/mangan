@@ -1,10 +1,10 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Welcome to sass file ...
 ---
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono|VT323|Halant") screen;
 
-// Our variables
+// Our variables ...
 $base-font-family: 'VT323', ;
 $cutive:		   'Cutive Mono', ;
 $halant:		   'Halant', ;
@@ -12,44 +12,32 @@ $vt323:			   'VT323', ;
 $base-font-size:   16.5px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5; 
-
 $spacing-unit:     30px;
-$dark-color-aap:   #2D2D2D;
 
+// Color ...
+$dark-color-aap:   #2D2D2D;
 $link-color: 	   #3c4245;
 $link-hover-color: #151617;
-$lara-color:	   #3c4245;
-
-$text-color:       #111;
 $background-color: #F9F9F9;
-$brand-color:      #2a7ae2;
-
 $grey-color:       #828282;
 $date-color:	   #626262;
 $github-color:     #4A4A4A;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// Width of the content area
+// Width of the content area ...
 $content-width:    800px;
-
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+// Using media queries with like this ...
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
     }
 }
 
-// Import partials from `sass_dir` (defaults to `_sass`)
+// Import partials from _sass ...
 @import
         "base",
         "layout"
