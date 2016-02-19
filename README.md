@@ -22,14 +22,16 @@ Custom you want! :sparkles:
 
 ## What's in there?
 
+ * Beauty, minify and litle awesome code
+ * Emoji support
  * Geek theme
- * Basic octopress template
- * Speed up
  * Instagram view
- * URI
  * Pagination
+ * SEO directly used
+ * Speed up
+ * Unique and secret fun in code and webview
+ * URI
  * More!
- * Contribute for building this theme
 
 ## Demo
 
