@@ -10,7 +10,7 @@
 
 ## Install
 
-Fork, then clone.
+Fork, then rename to username.github.io and clone.
 
     git clone https://github.com/username/username.github.io.git
     cd username.github.io
