@@ -1,6 +1,6 @@
 ![image](http://i.imgur.com/m0e7Sta.png)
 
-# Install
+## Install
 
 Fork this repository and change name repository to yourusername.github.io
 
@@ -12,7 +12,7 @@ Fork this repository and change name repository to yourusername.github.io
 
 `jekyll serve`
 
-# What's in there?
+## What's in there?
 
  * Geek theme
  * Basic octopress template
@@ -23,8 +23,12 @@ Fork this repository and change name repository to yourusername.github.io
  * More!
  * Contribute for building this theme
 
-# Demo
+## Demo
 
 See the demo [here](https://blog.dikiaap.id)
 
 More feature, you can visit [jekyllrb](http://jekyllrb.com)
+
+## License
+
+MIT © [Diki Andriansyah](https://dikiaap.id)
