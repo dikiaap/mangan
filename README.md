@@ -14,11 +14,11 @@
 
 Fork, then rename to `username.github.io` and clone.
 
-<img src="http://i.imgur.com/rIROAIb.png">
+<img src="http://i.imgur.com/pReoMqH.png">
 
 If looks good, then deploy to GitHub.
 
-<img src="http://i.imgur.com/ZMBCLja.png">
+<img src="http://i.imgur.com/8J09e6A.png">
 
 Visit your website now and custom you want! :sparkles:.    
 
