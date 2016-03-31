@@ -1,11 +1,9 @@
 ![image](http://i.imgur.com/m0e7Sta.png)
 
 ## Requirements
-- Ruby (v1.9.3 or above for Jekyll 2 and v2 or above for Jekyll 3)
+- Ruby (`v1.9.3` or above for `Jekyll 2` and `v2` or above for `Jekyll 3`)
 - [RubyGems](http://rubygems.org/pages/download)
 - Linux, Unix, or Mac OS X
-- NodeJS, or another JavaScript runtime (Jekyll 2 and earlier, for CoffeeScript support)
-- Python 2.7 (for Jekyll 2 and earlier)
 - Git
 
 ## Install
