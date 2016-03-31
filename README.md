@@ -1,4 +1,6 @@
-![image](http://i.imgur.com/m0e7Sta.png)
+# Mangan
+
+![image](http://i.imgur.com/dgzKZlq.png)
 
 ## Requirements
 - Ruby (`v1.9.3` or above for `Jekyll 2` and `v2` or above for `Jekyll 3`)
@@ -15,19 +17,13 @@ Fork, then rename to `username.github.io` and clone.
     git clone https://github.com/username/username.github.io.git
     cd username.github.io
     sudo gem install jekyll jekyll-paginate jekyll-sitemap jemoji octopress
-
-Create new post.
-
     octopress new post "Your post"
-
-Build website.
-
     jekyll build
     jekyll serve
 
 Visit [localhost:4000](http://localhost:4000)
 
-If look good, then deploy to GitHub.
+If looks good, then deploy to GitHub.
 
     git add -u
     git add .
