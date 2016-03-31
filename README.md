@@ -14,21 +14,11 @@
 
 Fork, then rename to `username.github.io` and clone.
 
-    git clone https://github.com/username/username.github.io.git
-    cd username.github.io
-    sudo gem install jekyll jekyll-paginate jekyll-sitemap jemoji octopress
-    octopress new post "Your post"
-    jekyll build
-    jekyll serve
-
-Visit [localhost:4000](http://localhost:4000)
+<img src="http://i.imgur.com/rIROAIb.png">
 
 If looks good, then deploy to GitHub.
 
-    git add -u
-    git add .
-    git commit -m 'Message'
-    git push
+<img src="http://i.imgur.com/ZMBCLja.png">
 
 Visit your website now and custom you want! :sparkles:.    
 
