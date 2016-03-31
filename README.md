@@ -20,7 +20,7 @@ If looks good, then deploy to GitHub.
 
 <img src="http://i.imgur.com/8J09e6A.png">
 
-Visit your website now and custom you want! :sparkles:.    
+Visit your website now and custom you want! :sparkles:
 
 ## What's in there?
 
@@ -37,9 +37,9 @@ Visit your website now and custom you want! :sparkles:.
 
 ## Demo
 
-See the demo [here](https://blog.dikiaap.id)
+See demo [here](https://blog.dikiaap.id).
 
-More feature, you can visit [jekyllrb](http://jekyllrb.com)
+More feature, you can visit [jekyllrb](http://jekyllrb.com).
 
 ## License
 
