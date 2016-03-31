@@ -10,15 +10,33 @@
 
 ## Install
 
-Fork, then rename to username.github.io and clone.
+**Note** : Follow this steps until done and your website will be online.
+
+Fork, then rename to `username.github.io` and clone.
 
     git clone https://github.com/username/username.github.io.git
     cd username.github.io
-    sudo gem install jekyll jekyll-paginate jekyll-sitemap jemoji
+    sudo gem install jekyll jekyll-paginate jekyll-sitemap jemoji octopress
+
+Create new post.
+
+    octopress new post "Your post"
+
+Build website.
+
     jekyll build
     jekyll serve
 
-Custom you want! :sparkles:
+Visit [localhost:4000](http://localhost:4000)
+
+If look good, then deploy to GitHub.
+
+    git add -u
+    git add .
+    git commit -m 'Message'
+    git push
+
+Visit your website now and custom you want! :sparkles:.    
 
 ## What's in there?
 
