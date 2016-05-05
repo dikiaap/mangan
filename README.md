@@ -1,5 +1,8 @@
 # Mangan
 
+[![Build Status](https://img.shields.io/travis/dikiaap/mangan/master.svg?style=flat-square)](https://travis-ci.org/dikiaap/mangan)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/dikiaap/mangan)
+
 ![image](http://i.imgur.com/dgzKZlq.png)
 
 ## Requirements
@@ -39,7 +42,7 @@ Visit your website now and custom you want! :sparkles:
 
 See demo [here](https://blog.dikiaap.id).
 
-More feature, you can visit [jekyllrb](http://jekyllrb.com).
+More feature, you can visit [jekyllrb.com](http://jekyllrb.com).
 
 ## License
 

@@ -1,0 +1,24 @@
+language: ruby
+
+git:
+  depth: 10
+
+rvm:
+  - 2.2
+  - 2.1
+  - 2.0
+
+branches:
+  only:
+    - master
+
+before_install:
+  - gem update --system
+
+install:
+  - gem install jekyll jekyll-paginate jekyll-sitemap jemoji octopress --no-ri --no-rdoc
+  - octopress new post "Your post"
+
+script:
+  - jekyll clean
+  - jekyll build

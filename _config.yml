@@ -1,16 +1,15 @@
 # Site settings ...
-uri: dikiaap.id
-url: https://blog.dikiaap.id
-name: Diki Andriansyah
-title: Diki Andriansyah Blog - Stay Brom
-email: diki@dikiaap.id
-author: dikiaap
+uri: domain.com
+url: https://domain.com
+name: Your name
+title: Title website
+email: example@domain.com
+author: username
 baseurl: ""
 timezone: Asia/Jakarta
-keywords: "Diki Andriansyah, Diki Andriansyah Blog, dikiaap, Diki Andriansyah Ananta Putra"
-description: "Hi! Saya Diki Andriansyah. Suka membangun sesuatu dengan code dan bekerja sebagai developer. Brom [] ini adalah sebuah blog room dan banyak bermacam-macam aktifitas yang saya tulis di sini."
-social_username: dikiaap
-secondary_social_username: dikiandriansyahap
+keywords: "Your, Keyword, Here"
+description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil, velit odio quia autem quos. Natus itaque sint, nisi fuga dolorum. Iste ea cumque, aliquam dignissimos vitae labore atque minima?"
+social_username: username
 
 # Build settings ...
 sass:
@@ -18,7 +17,7 @@ sass:
 markdown: kramdown
 encoding: "utf-8"
 paginate: 5
-permalink: "write/:year/:month/:day/:title/"
+permalink: /post/:title
 paginate_path: "/page/:num/"
 
 # Plugins ...
