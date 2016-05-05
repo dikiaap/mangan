@@ -6,7 +6,7 @@
 ![image](http://i.imgur.com/dgzKZlq.png)
 
 ## Requirements
-- Ruby (`v1.9.3` or above for `Jekyll 2` and `v2` or above for `Jekyll 3`)
+- Ruby 2.x
 - [RubyGems](http://rubygems.org/pages/download)
 - Linux, Unix, or Mac OS X
 - Git
