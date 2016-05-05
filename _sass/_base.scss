@@ -163,7 +163,7 @@ pre {
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
-    }   
+    }
 }
 
 .wrapper-fit {
@@ -207,7 +207,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $github-color; 
+            fill: $github-color;
         }
     }
 }
