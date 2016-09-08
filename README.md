@@ -40,7 +40,7 @@ Visit your website now and custom you want! :sparkles:
 
 ## Demo
 
-See demo [here](https://blog.dikiaap.id).
+See demo [here](https://mangan.dikiaap.id).
 
 More feature, you can visit [jekyllrb.com](http://jekyllrb.com).
 
