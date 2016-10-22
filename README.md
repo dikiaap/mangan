@@ -17,7 +17,7 @@
 
 Fork, then rename to `username.github.io` and clone.
 
-```bash
+```shell
 git clone https://github.com/username/username.github.io.git
 cd username.github.io
 sudo gem install jekyll jekyll-paginate jekyll-sitemap
@@ -29,7 +29,7 @@ jekyll serve
 
 If looks good, then deploy to GitHub.
 
-```bash
+```shell
 git add -u
 git add .
 git commit -m "Message"
