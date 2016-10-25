@@ -17,11 +17,24 @@
 
 Fork, then rename to `username.github.io` and clone.
 
-<img src="http://i.imgur.com/pReoMqH.png">
+```shell
+git clone https://github.com/username/username.github.io.git
+cd username.github.io
+sudo gem install jekyll jekyll-paginate jekyll-sitemap
+sudo gem install jemoji octopress
+octopress new post "Your post"
+jekyll build
+jekyll serve
+```
 
 If looks good, then deploy to GitHub.
 
-<img src="http://i.imgur.com/8J09e6A.png">
+```shell
+git add -u
+git add .
+git commit -m "Message"
+git push
+```
 
 Visit your website now and custom you want! :sparkles:
 
