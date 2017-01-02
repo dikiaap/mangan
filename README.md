@@ -6,7 +6,7 @@
 ![image](http://i.imgur.com/dgzKZlq.png)
 
 ## Requirements
-- Ruby 2.x
+- Ruby >= 2.1
 - [RubyGems](http://rubygems.org/pages/download)
 - Linux, Unix, or Mac OS X
 - Git
@@ -15,7 +15,7 @@
 
 **Note** : Follow this steps until done and your website will be online.
 
-Fork, then rename to `username.github.io` and clone.
+Fork, then rename to `username.github.io` and clone to your computer.
 
 ```shell
 git clone https://github.com/username/username.github.io.git
@@ -36,7 +36,7 @@ git commit -m "Message"
 git push
 ```
 
-Visit your website now and custom you want! :sparkles:
+Visit your website now and custom what you want! :sparkles:
 
 ## What's in there?
 
