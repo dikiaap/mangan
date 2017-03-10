@@ -374,6 +374,19 @@
     font-family: $cutive;
 }
 
+.post-next {
+    width: 50%;
+    float: left;
+    margin: 1px 0;
+}
+
+.post-prev {
+    width: 50%;
+    float: left;
+    margin: 1px 0;
+    text-align: right;
+}
+
 /**
  * Site footer
  */
