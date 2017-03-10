@@ -1,14 +1,21 @@
 ---
 # Welcome to sass file ...
 ---
+/*!
+ * Mangan v1.3.3
+ * Copyright 2015-2017 Diki Andriansyah
+ * Released under the MIT license
+ */
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono|VT323|Halant") screen;
 
-// Our variables ...
+// Font family ...
 $base-font-family: 'VT323', ;
 $cutive:		   'Cutive Mono', ;
 $halant:		   'Halant', ;
 $vt323:			   'VT323', ;
+
+// A sizes ...
 $base-font-size:   16.5px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
