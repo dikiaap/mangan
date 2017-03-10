@@ -4,8 +4,8 @@ title: "Installation Mangan Jekyll Theme"
 date: 2017-03-10 19:09:40 +0700
 author: username
 sitemap: false
-keywords: "Welcome to Mangan"
-description: "Welcome to Mangan"
+keywords: "Installation Mangan Jekyll Theme"
+description: "Installation Mangan Jekyll Theme"
 ---
 # Mangan
 
