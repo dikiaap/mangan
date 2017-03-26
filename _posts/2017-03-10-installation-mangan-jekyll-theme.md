@@ -24,7 +24,7 @@ description: "Installation Mangan Jekyll Theme"
 
 **Note** : Follow this steps until done and your website will be online.
 
-Fork, then rename to `username.github.io` and clone to your computer.
+Fork [**dikiaap/mangan**](https://github.com/dikiaap/mangan), then rename to `username.github.io` and clone to your computer.
 
 ```shell
 git clone https://github.com/username/username.github.io.git
@@ -68,4 +68,4 @@ More feature, you can visit [jekyllrb.com](http://jekyllrb.com).
 
 ## License
 
-MIT © [Diki Andriansyah](https://dikiaap.id)
+MIT © [Diki Ananta](https://dikiaap.id)

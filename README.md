@@ -59,4 +59,4 @@ More feature, you can visit [jekyllrb.com](http://jekyllrb.com).
 
 ## License
 
-MIT © [Diki Andriansyah](https://dikiaap.id)
+MIT © [Diki Ananta](https://dikiaap.id)
