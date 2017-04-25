@@ -33,7 +33,7 @@ sudo gem install jekyll jekyll-paginate jekyll-sitemap
 sudo gem install jemoji octopress
 octopress new post "Your post"
 jekyll build
-jekyll serve)7
+jekyll serve
 ```
 
 If looks good, then deploy to GitHub.
@@ -70,4 +70,5 @@ More feature, you can visit [jekyllrb.com](http://jekyllrb.com).
 
 MIT © [Diki Ananta](https://dikiaap.id)
 
-dd
+
+sss
