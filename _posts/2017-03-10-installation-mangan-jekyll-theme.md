@@ -49,7 +49,7 @@ Visit your website now and custom what you want! :sparkles:
 
 ## What's in there?
 
- * Beauty, minify and litle awesome code
+ * Beauty, minify, and little awesome code
  * Emoji support
  * Geek theme
  * Instagram view
