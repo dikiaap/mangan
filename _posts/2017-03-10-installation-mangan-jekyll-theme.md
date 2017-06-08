@@ -16,7 +16,7 @@ description: "Installation Mangan Jekyll Theme"
 
 ## Requirements
 - Ruby >= 2.1
-- [RubyGems](http://rubygems.org/pages/download)
+- [RubyGems](https://rubygems.org/pages/download)
 - Linux, Unix, or Mac OS X
 - Git
 
@@ -64,7 +64,7 @@ Visit your website now and custom what you want! :sparkles:
 
 See demo [here](https://mangan.dikiaap.id).
 
-More feature, you can visit [jekyllrb.com](http://jekyllrb.com).
+More features? you can visit [Jekyll Docs](https://jekyllrb.com/docs/home/).
 
 ## License
 
