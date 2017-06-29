@@ -20,7 +20,7 @@ permalink: /post/:title
 paginate_path: "/page/:num/"
 
 # Plugins ...
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
