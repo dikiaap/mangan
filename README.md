@@ -6,7 +6,7 @@
 ![image](http://i.imgur.com/dgzKZlq.png)
 
 ## Requirements
-- Ruby >= 2.1
+- Ruby >= 2.2
 - [RubyGems](https://rubygems.org/pages/download)
 - Linux, Unix, or Mac OS X
 - Git
