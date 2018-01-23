@@ -17,7 +17,7 @@ before_install:
   - gem update --system
 
 install:
-  - gem install jekyll jekyll-paginate jekyll-sitemap jemoji octopress --no-ri --no-rdoc
+  - gem install jekyll jekyll-paginate jekyll-sitemap jemoji octopress
   - octopress new post "Your post"
 
 script:
