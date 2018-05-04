@@ -6,7 +6,7 @@
 ![Mangan Jekyll Theme](https://i.imgur.com/dgzKZlq.png)
 
 ## Requirements
-- Ruby >= 2.2
+- Ruby >= 2.3
 - [RubyGems](https://rubygems.org/pages/download)
 - Linux, Unix, or Mac OS X
 - Git
