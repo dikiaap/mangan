@@ -1,7 +1,7 @@
 # Mangan
 
-[![Build Status](https://img.shields.io/travis/dikiaap/mangan/master.svg?style=flat-square)](https://travis-ci.org/dikiaap/mangan)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/dikiaap/mangan)
+[![Build Status](https://img.shields.io/travis/com/dikiaap/mangan/master.svg?style=flat-square&logo=travis)](https://travis-ci.org/dikiaap/mangan)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
 
 ![Mangan Jekyll Theme](https://i.imgur.com/dgzKZlq.png)
 
