@@ -1,15 +1,16 @@
 # Mangan
 
-[![Build Status](https://img.shields.io/travis/dikiaap/mangan/master.svg?style=flat-square)](https://travis-ci.org/dikiaap/mangan)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/dikiaap/mangan)
+[![Build Status](https://img.shields.io/travis/com/dikiaap/mangan/master.svg?style=flat-square&logo=travis)](https://travis-ci.com/dikiaap/mangan)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
 
 ![Mangan Jekyll Theme](https://i.imgur.com/dgzKZlq.png)
 
 ## Requirements
-- Ruby >= 2.2
-- [RubyGems](https://rubygems.org/pages/download)
-- Linux, Unix, or Mac OS X
-- Git
+
+-   Ruby >= 2.3
+-   [RubyGems](https://rubygems.org/pages/download)
+-   Linux, Unix, or Mac OS X
+-   Git
 
 ## Install
 
@@ -40,20 +41,20 @@ Visit your website now and custom what you want! :sparkles:
 
 ## What's in there?
 
- * Beauty, minify, and little awesome code
- * Emoji support
- * Geek theme
- * Instagram view
- * Pagination
- * SEO directly used
- * Speed up
- * Unique and secret fun in code and webview
- * URI
- * More!
+-   Beauty, minify, and little awesome code
+-   Emoji support
+-   Geek theme
+-   Instagram view
+-   Pagination
+-   SEO directly used
+-   Speed up
+-   Unique and secret fun in code and webview
+-   URI
+-   More!
 
 ## Demo
 
-See demo [here](https://mangan.dikiaap.id).
+See demo [here](https://amanas.github.io).
 
 More features? you can visit [Jekyll Docs](https://jekyllrb.com/docs/home/).
 

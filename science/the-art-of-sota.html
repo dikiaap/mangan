@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128252211-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128252211-1');
+</script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KBKC63V');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <title>The art of SoTA</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="amanas">
+  <meta name="HandheldFriendly" content="True">
+  
+  <meta name="description" content="How to write the State of The Art of a research">
+  
+  <meta name="keywords" content="Research State Art">
+  <meta name="rating" content="general">
+  <meta name="robots" content="index,follow">
+  <meta name="revisit-after" content="2 days">
+  <meta name="language" content="English, Spanish">
+  <meta name="distribution" content="Global">
+  <meta property="og:site_name" content="Andrés Mañas home site">
+  <meta property="og:title" content="The art of SoTA">
+  <meta property="og:description" content="How to write the State of The Art of a research">
+  <meta property="og:image" content="https://amanas.github.io/images/amanas.png">
+  <meta property="twitter:site" content="@andresmanas">
+  <meta property="twitter:site:id" content="218250767">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:title" content="The art of SoTA">
+  <meta property="twitter:description" content="How to write the State of The Art of a research">
+  <meta property="twitter:image:src" content="https://amanas.github.io/images/amanas.png">
+  <link href="/css/main.css" rel="stylesheet" type="text/css">
+  <link href="https://plus.google.com/114562271878559462488" rel="author">
+  <link href="https://plus.google.com/114562271878559462488" rel="publisher">
+  <link href="/favicon.png" rel="icon">
+  <link href="https://amanas.github.io/science/the-art-of-sota" rel="canonical">
+  <link rel="alternate" type="application/rss+xml" title="Andrés Mañas home site" href="https://amanas.github.io/feed.xml">
+  <link rel="stylesheet" href="/css/monokai.css" type="text/css">
+
+  
+  
+
+
+
+
+
+
+  
+</head>
+
+<!--
+                _____________________
+                |###################|
+                |###################|
+                |###################|
+                |###################|
+    ((- - - - - - - - - - - - - - - - - - - - -
+    | \         /  /@@ \      /@@ \  \
+     \ \,      /  (     )    (     )  \             _____
+      \ \      |   \___/      \___/   |            /  __ \
+       \ ""*-__/                      \            | |  | |
+        ""*-_                         "-_          | |  """
+             \    -.  _________   .-   __"-.__. -((  ))
+              \,    \^    U    ^/     /  "-___- -((  ))
+                \,   \         /    /'             | |
+                 |    \       /   /'               | |
+                 |     "- - -"    \                | |
+                /                  "*-._           | |
+               /   /\          /*-._    \          | |
+              /   /  "\______/"     /   /          | |
+             /   /                 /   /           | |
+            /. ./                  |. .|           """
+           /  | |                  / | \
+          /   |  \                /  |  \
+         /.-./.-.|               /.-.|.-.\
+  -->
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBKC63V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header class="site-header">
+	<div class="wrapper">
+		<a href="/">
+			<div class="center">
+				<img class="displayed" style="margin:30px auto;width:100px;height:100px; border-radius: 20%;" src="/images/amanas.png" alt="A couple of monkeys"></div>
+		</a>
+	</div>
+	<div class="center">
+		Andrés Mañas
+		<br />
+		Data, maths and algorithms
+		<br />
+		Some thoughts, many mistakes
+		<br />
+		<br />
+	</div>
+</header>
+
+  <div class="page-content">
+    <div class="wrapper-fit">
+      <header class="post-header">
+  <h1 class="post-title">The art of SoTA</h1>
+  <div class="post-detail">
+    28 Oct 2018
+     • By
+    <a href="https://github.com/amanas" target="_blank">amanas</a>
+    
+    
+    
+    
+    <br />
+    <span class="post-meta"> </span>
+    
+     <a href="/tag/science">science&nbsp;</a> 
+    
+     <a href="/tag/research">research&nbsp;</a> 
+    
+  </div>
+  <div class="post-line"></div>
+</header>
+<h2 id="intro">Intro</h2>
+
+<p>Currently, I am starting to write my MSc. Thesis. The research is about forecasting the flow traffic in the city of Madrid.</p>
+
+<p>When you start a research, tipically the first step is to review the <strong>“State of The Art”</strong>.</p>
+
+<p>Benefits:</p>
+
+<ul>
+  <li>it demonstrates the novelty of your research results</li>
+  <li>you learn about your research problem</li>
+  <li>it shows different approaches to a solution</li>
+  <li>you can reuse from what others have done</li>
+</ul>
+
+<p>In order to elaborate the SoTA, I have proceeded as follows.</p>
+
+<h2 id="step-1-search-related-terms">Step 1: search related terms</h2>
+
+<p>Choose many search terms and find related publications on <a href="https://scholar.google.es/">Google scholar</a>. The list of terms used was:</p>
+
+<ul>
+  <li>traffic forecasting</li>
+  <li>traffic forecast model comparison</li>
+  <li>traffic forecasting machine learning</li>
+  <li>traffic forecasting time series models</li>
+  <li>traffic prediction models (filtering from 2014)</li>
+  <li>traffic forecast multivariate (filtering from desde 2014)</li>
+  <li>traffic forecasting artificial intelligence</li>
+  <li>traffic forecasting neural networks models</li>
+</ul>
+
+<p>For each result, choose 10 results (those that most attract you) and put all of them into a single csv document. Do not worry if some are picked several times:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">knitr</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span><span class="w">
+
+</span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="n">find.file</span><span class="p">(</span><span class="s1">'SoTA.csv'</span><span class="p">),</span><span class="w"> </span><span class="n">header</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">T</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">';'</span><span class="p">)</span><span class="w">
+</span><span class="n">data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">select</span><span class="p">(</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">cited</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">head</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">kable</span><span class="w">
+</span></code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">title</th>
+      <th style="text-align: left">url</th>
+      <th style="text-align: right">year</th>
+      <th style="text-align: right">cited</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">A forecast comparison of volatility models: does anything beat a GARCH(1,1)?</td>
+      <td style="text-align: left"><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jae.800">https://onlinelibrary.wiley.com/doi/full/10.1002/jae.800</a></td>
+      <td style="text-align: right">2005</td>
+      <td style="text-align: right">1427</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">A survey of techniques for internet traffic classification using machine learning</td>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/abstract/document/4738466">https://ieeexplore.ieee.org/abstract/document/4738466</a></td>
+      <td style="text-align: right">2008</td>
+      <td style="text-align: right">1123</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Comparison of parametric and nonparametric models for traffic flow forecasting</td>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0968090X02000098">https://www.sciencedirect.com/science/article/pii/S0968090X02000098</a></td>
+      <td style="text-align: right">2002</td>
+      <td style="text-align: right">762</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Comparison of parametric and nonparametric models for traffic flow forecasting</td>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0968090X02000098">https://www.sciencedirect.com/science/article/pii/S0968090X02000098</a></td>
+      <td style="text-align: right">2002</td>
+      <td style="text-align: right">762</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Traffic Flow Prediction With Big Data: A Deep Learning Approach</td>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/document/6894591">https://ieeexplore.ieee.org/document/6894591</a></td>
+      <td style="text-align: right">2015</td>
+      <td style="text-align: right">562</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Traffic flow prediction with big data: A deep learning approach</td>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/document/6894591">https://ieeexplore.ieee.org/document/6894591</a></td>
+      <td style="text-align: right">2015</td>
+      <td style="text-align: right">562</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="step-2-arrange">Step 2: arrange</h2>
+
+<p>Now we can sort by year, cited and times we selected it:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data.sum</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">group_by</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">summarise</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">first</span><span class="p">(</span><span class="n">title</span><span class="p">),</span><span class="w"> </span><span class="n">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">first</span><span class="p">(</span><span class="n">year</span><span class="p">),</span><span class="w">
+            </span><span class="n">cited</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">first</span><span class="p">(</span><span class="n">cited</span><span class="p">),</span><span class="w"> </span><span class="n">freq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">url</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">arrange</span><span class="p">(</span><span class="n">desc</span><span class="p">(</span><span class="n">freq</span><span class="p">),</span><span class="w"> </span><span class="n">desc</span><span class="p">(</span><span class="n">year</span><span class="p">),</span><span class="w"> </span><span class="n">desc</span><span class="p">(</span><span class="n">cited</span><span class="p">))</span><span class="w">
+
+</span><span class="n">data.sum</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">head</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">kable</span><span class="w">
+</span></code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">url</th>
+      <th style="text-align: left">title</th>
+      <th style="text-align: right">year</th>
+      <th style="text-align: right">cited</th>
+      <th style="text-align: right">freq</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0377221700001259">https://www.sciencedirect.com/science/article/abs/pii/S0377221700001259</a></td>
+      <td style="text-align: left">An object-oriented neural network approach to short-term traffic forecasting</td>
+      <td style="text-align: right">2001</td>
+      <td style="text-align: right">343</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(1997)123:4(261)">https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(1997)123:4(261)</a></td>
+      <td style="text-align: left">Traffic Flow Forecasting: Comparison of Modeling Approaches</td>
+      <td style="text-align: right">1997</td>
+      <td style="text-align: right">491</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0169207096006991">https://www.sciencedirect.com/science/article/pii/S0169207096006991</a></td>
+      <td style="text-align: left">Should we use neural networks or statistical models for short-term motorway traffic forecasting?</td>
+      <td style="text-align: right">1997</td>
+      <td style="text-align: right">201</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/document/6894591">https://ieeexplore.ieee.org/document/6894591</a></td>
+      <td style="text-align: left">Traffic Flow Prediction With Big Data: A Deep Learning Approach</td>
+      <td style="text-align: right">2015</td>
+      <td style="text-align: right">562</td>
+      <td style="text-align: right">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/abstract/document/6482260">https://ieeexplore.ieee.org/abstract/document/6482260</a></td>
+      <td style="text-align: left">Short-Term Traffic Flow Forecasting: An Experimental Comparison of Time-Series Analysis and Supervised Learning</td>
+      <td style="text-align: right">2013</td>
+      <td style="text-align: right">184</td>
+      <td style="text-align: right">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.researchgate.net/profile/Changshui_Zhang2/publication/3427947_A_Bayesian_Network_Approach_to_Traffic_Flow_Forecasting/links/55b1ea2208aed621ddfd6e22.pdf">https://www.researchgate.net/profile/Changshui_Zhang2/publication/3427947_A_Bayesian_Network_Approach_to_Traffic_Flow_Forecasting/links/55b1ea2208aed621ddfd6e22.pdf</a></td>
+      <td style="text-align: left">A Bayesian network approach to traffic flow forecasting</td>
+      <td style="text-align: right">2006</td>
+      <td style="text-align: right">385</td>
+      <td style="text-align: right">3</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>Sort according to your own criteria. It could be interesting to select recent stuff, cited many times.</p>
+</blockquote>
+
+<h2 id="step-3-weight">Step 3: weight</h2>
+
+<p>We can even add a weight:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data.sum</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">mutate</span><span class="p">(</span><span class="n">W</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">cited</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="m">2018</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">year</span><span class="p">))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">freq</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">arrange</span><span class="p">(</span><span class="n">desc</span><span class="p">(</span><span class="n">W</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">kable</span><span class="w">
+</span></code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">url</th>
+      <th style="text-align: left">title</th>
+      <th style="text-align: right">year</th>
+      <th style="text-align: right">cited</th>
+      <th style="text-align: right">freq</th>
+      <th style="text-align: right">W</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(1997)123:4(261)">https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(1997)123:4(261)</a></td>
+      <td style="text-align: left">Traffic Flow Forecasting: Comparison of Modeling Approaches</td>
+      <td style="text-align: right">1997</td>
+      <td style="text-align: right">491</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">2048</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/document/6894591">https://ieeexplore.ieee.org/document/6894591</a></td>
+      <td style="text-align: left">Traffic Flow Prediction With Big Data: A Deep Learning Approach</td>
+      <td style="text-align: right">2015</td>
+      <td style="text-align: right">562</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1695</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0968090X02000098">https://www.sciencedirect.com/science/article/pii/S0968090X02000098</a></td>
+      <td style="text-align: left">Comparison of parametric and nonparametric models for traffic flow forecasting</td>
+      <td style="text-align: right">2002</td>
+      <td style="text-align: right">762</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">1556</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0377221700001259">https://www.sciencedirect.com/science/article/abs/pii/S0377221700001259</a></td>
+      <td style="text-align: left">An object-oriented neural network approach to short-term traffic forecasting</td>
+      <td style="text-align: right">2001</td>
+      <td style="text-align: right">343</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">1440</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jae.800">https://onlinelibrary.wiley.com/doi/full/10.1002/jae.800</a></td>
+      <td style="text-align: left">A forecast comparison of volatility models: does anything beat a GARCH(1,1)?</td>
+      <td style="text-align: right">2005</td>
+      <td style="text-align: right">1427</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1440</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://research.utwente.nl/files/6769849/Voort96combining.pdf">https://research.utwente.nl/files/6769849/Voort96combining.pdf</a></td>
+      <td style="text-align: left">Combining Kohonen maps with ARIMA time series models to forecast traffic flow</td>
+      <td style="text-align: right">1996</td>
+      <td style="text-align: right">401</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1269</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.researchgate.net/profile/Changshui_Zhang2/publication/3427947_A_Bayesian_Network_Approach_to_Traffic_Flow_Forecasting/links/55b1ea2208aed621ddfd6e22.pdf">https://www.researchgate.net/profile/Changshui_Zhang2/publication/3427947_A_Bayesian_Network_Approach_to_Traffic_Flow_Forecasting/links/55b1ea2208aed621ddfd6e22.pdf</a></td>
+      <td style="text-align: left">A Bayesian network approach to traffic flow forecasting</td>
+      <td style="text-align: right">2006</td>
+      <td style="text-align: right">385</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1191</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/abstract/document/4738466">https://ieeexplore.ieee.org/abstract/document/4738466</a></td>
+      <td style="text-align: left">A survey of techniques for internet traffic classification using machine learning</td>
+      <td style="text-align: right">2008</td>
+      <td style="text-align: right">1123</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1133</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(2003)129:6(664)">https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(2003)129:6(664)</a></td>
+      <td style="text-align: left">Modeling and Forecasting Vehicular Traffic Flow as a Seasonal ARIMA Process: Theoretical Basis and Empirical Results</td>
+      <td style="text-align: right">2003</td>
+      <td style="text-align: right">526</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">1082</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(2006)132:2(114)">https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(2006)132:2(114)</a></td>
+      <td style="text-align: left">Short-Term Freeway Traffic Flow Prediction: Bayesian Combined Neural Network Approach</td>
+      <td style="text-align: right">2006</td>
+      <td style="text-align: right">300</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">936</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0169207096006991">https://www.sciencedirect.com/science/article/pii/S0169207096006991</a></td>
+      <td style="text-align: left">Should we use neural networks or statistical models for short-term motorway traffic forecasting?</td>
+      <td style="text-align: right">1997</td>
+      <td style="text-align: right">201</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">888</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(1991)117:2(178)">https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(1991)117:2(178)</a></td>
+      <td style="text-align: left">Nonparametric Regression and Short-Term Freeway Traffic Forecasting</td>
+      <td style="text-align: right">1991</td>
+      <td style="text-align: right">375</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">804</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.tandfonline.com/doi/abs/10.1080/0144164042000195072">https://www.tandfonline.com/doi/abs/10.1080/0144164042000195072</a></td>
+      <td style="text-align: left">Short-term traffic forecasting: Overview of objectives and methods</td>
+      <td style="text-align: right">2004</td>
+      <td style="text-align: right">386</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">800</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0968090X14000096">https://www.sciencedirect.com/science/article/pii/S0968090X14000096</a></td>
+      <td style="text-align: left">Short-term traffic forecasting: Where we are and where we are going</td>
+      <td style="text-align: right">2014</td>
+      <td style="text-align: right">331</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">670</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0169207096006978">https://www.sciencedirect.com/science/article/pii/S0169207096006978</a></td>
+      <td style="text-align: left">Short-term inter-urban traffic forecasts using neural networks</td>
+      <td style="text-align: right">1997</td>
+      <td style="text-align: right">271</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">584</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/abstract/document/6482260">https://ieeexplore.ieee.org/abstract/document/6482260</a></td>
+      <td style="text-align: left">Short-Term Traffic Flow Forecasting: An Experimental Comparison of Time-Series Analysis and Supervised Learning</td>
+      <td style="text-align: right">2013</td>
+      <td style="text-align: right">184</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">567</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0968090X05000276">https://www.sciencedirect.com/science/article/pii/S0968090X05000276</a></td>
+      <td style="text-align: left">Optimized and meta-optimized neural networks for short-term traffic flow prediction: A genetic approach</td>
+      <td style="text-align: right">2005</td>
+      <td style="text-align: right">468</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">481</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0968090X03000044">https://www.sciencedirect.com/science/article/pii/S0968090X03000044</a></td>
+      <td style="text-align: left">A multivariate state space approach for urban traffic flow modeling and prediction</td>
+      <td style="text-align: right">2003</td>
+      <td style="text-align: right">437</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">452</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/abstract/document/400094">https://ieeexplore.ieee.org/abstract/document/400094</a></td>
+      <td style="text-align: left">Short-term traffic flow prediction models-a comparison of neural network and nonparametric regression approaches</td>
+      <td style="text-align: right">1994</td>
+      <td style="text-align: right">390</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">414</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0968090X00000395">https://www.sciencedirect.com/science/article/pii/S0968090X00000395</a></td>
+      <td style="text-align: left">Use of sequential learning for short-term traffic flow forecasting</td>
+      <td style="text-align: right">2001</td>
+      <td style="text-align: right">189</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">412</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://link.springer.com/chapter/10.1007/3-540-45517-5_33">https://link.springer.com/chapter/10.1007/3-540-45517-5_33</a></td>
+      <td style="text-align: left">Time Delay Neural Networks Designed Using Genetic Algorithms for Short Term Inter-City Traffic Forecasting</td>
+      <td style="text-align: right">2004</td>
+      <td style="text-align: right">386</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">400</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0968090X10001610">https://www.sciencedirect.com/science/article/pii/S0968090X10001610</a></td>
+      <td style="text-align: left">Statistical methods versus neural networks in transportation research: Differences, similarities and some insights</td>
+      <td style="text-align: right">2011</td>
+      <td style="text-align: right">380</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">387</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0957417408004740">https://www.sciencedirect.com/science/article/pii/S0957417408004740</a></td>
+      <td style="text-align: left">Online-SVR for short-term traffic flow prediction under typical and atypical traffic conditions</td>
+      <td style="text-align: right">2009</td>
+      <td style="text-align: right">304</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">313</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">trrjournalonline.trb.org/doi/abs/10.3141/1644-14</td>
+      <td style="text-align: left">Urban Freeway Traffic Flow Prediction: Application of Seasonal Autoregressive Integrated Moving Average and Exponential Smoothing Models</td>
+      <td style="text-align: right">1998</td>
+      <td style="text-align: right">283</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">303</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://trrjournalonline.trb.org/doi/abs/10.3141/1678-22">https://trrjournalonline.trb.org/doi/abs/10.3141/1678-22</a></td>
+      <td style="text-align: left">Application of Subset Autoregressive Integrated Moving Average Model for Short-Term Freeway Traffic Volume Forecasting</td>
+      <td style="text-align: right">1999</td>
+      <td style="text-align: right">250</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">269</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(2005)131:10(771)">https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(2005)131:10(771)</a></td>
+      <td style="text-align: left">Dynamic Wavelet Neural Network Model for Traffic Flow Forecasting</td>
+      <td style="text-align: right">2005</td>
+      <td style="text-align: right">250</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">263</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0394.2010.00568.x">https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0394.2010.00568.x</a></td>
+      <td style="text-align: left">Multi-scale Internet traffic forecasting using neural networks and time series methods</td>
+      <td style="text-align: right">2012</td>
+      <td style="text-align: right">117</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">246</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/abstract/document/493355">https://ieeexplore.ieee.org/abstract/document/493355</a></td>
+      <td style="text-align: left">Time series models for internet traffic</td>
+      <td style="text-align: right">1996</td>
+      <td style="text-align: right">200</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">222</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0968090X97000156">https://www.sciencedirect.com/science/article/pii/S0968090X97000156</a></td>
+      <td style="text-align: left">An urban traffic flow model integrating neural networks</td>
+      <td style="text-align: right">1997</td>
+      <td style="text-align: right">193</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">214</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://trid.trb.org/view/390622">https://trid.trb.org/view/390622</a></td>
+      <td style="text-align: left">The use of neural networks and time series models for short term traffic forecasting: a comparative study</td>
+      <td style="text-align: right">1993</td>
+      <td style="text-align: right">76</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">202</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0968090X15000935">https://www.sciencedirect.com/science/article/pii/S0968090X15000935</a></td>
+      <td style="text-align: left">Long short-term memory neural network for traffic speed prediction using remote microwave sensor data</td>
+      <td style="text-align: right">2015</td>
+      <td style="text-align: right">189</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">192</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0377221703004788">https://www.sciencedirect.com/science/article/abs/pii/S0377221703004788</a></td>
+      <td style="text-align: left">Different methods of traffic forecast based on real data</td>
+      <td style="text-align: right">2004</td>
+      <td style="text-align: right">176</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">190</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(2007)133:3(180)">https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-947X(2007)133:3(180)</a></td>
+      <td style="text-align: left">Bayesian Time-Series Model for Short-Term Traffic Flow Forecasting</td>
+      <td style="text-align: right">2013</td>
+      <td style="text-align: right">184</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">189</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/abstract/document/6088012">https://ieeexplore.ieee.org/abstract/document/6088012</a></td>
+      <td style="text-align: left">Neural-Network-Based Models for Short-Term Traffic Flow Forecasting Using a Hybrid Exponential Smoothing and Levenberg-Marquardt Algorithm</td>
+      <td style="text-align: right">2012</td>
+      <td style="text-align: right">176</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">182</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://arxiv.org/abs/1207.1352">https://arxiv.org/abs/1207.1352</a></td>
+      <td style="text-align: left">Prediction, Expectation, and Surprise: Methods, Designs, and Study of a Deployed Traffic Forecasting Service</td>
+      <td style="text-align: right">2012</td>
+      <td style="text-align: right">172</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">178</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/abstract/document/368876">https://ieeexplore.ieee.org/abstract/document/368876</a></td>
+      <td style="text-align: left">A time series model of long-term NSFNET backbone traffic</td>
+      <td style="text-align: right">1994</td>
+      <td style="text-align: right">153</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">177</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/abstract/document/4908946">https://ieeexplore.ieee.org/abstract/document/4908946</a></td>
+      <td style="text-align: left">Multivariate Short-Term Traffic Flow Forecasting Using Time-Series Analysis</td>
+      <td style="text-align: right">2009</td>
+      <td style="text-align: right">146</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">155</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">128.200.36.2/its/publications/papers/CTSS/UCI-ITS-TS-WP-02-5.pdf</td>
+      <td style="text-align: left">Short term traffic forecasting using the local linear regression model</td>
+      <td style="text-align: right">2003</td>
+      <td style="text-align: right">128</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">143</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://link.springer.com/article/10.1007/s10796-008-9131-2">https://link.springer.com/article/10.1007/s10796-008-9131-2</a></td>
+      <td style="text-align: left">An SVM-based machine learning method for accurate internet traffic classification</td>
+      <td style="text-align: right">2010</td>
+      <td style="text-align: right">134</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">142</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://trid.trb.org/view/648324">https://trid.trb.org/view/648324</a></td>
+      <td style="text-align: left">MODELING AND FORECASTING VEHICULAR TRAFFIC FLOW AS A SEASONAL STOCHASTIC TIME SERIES PROCESS</td>
+      <td style="text-align: right">1999</td>
+      <td style="text-align: right">122</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">141</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0169207096006954">https://www.sciencedirect.com/science/article/pii/S0169207096006954</a></td>
+      <td style="text-align: left">Recent advances and applications in the field of short-term traffic forecasting</td>
+      <td style="text-align: right">1997</td>
+      <td style="text-align: right">113</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">134</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S089571779800065X">https://www.sciencedirect.com/science/article/pii/S089571779800065X</a></td>
+      <td style="text-align: left">A performance evaluation of neural network models in traffic volume forecasting</td>
+      <td style="text-align: right">1998</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">120</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://digital-library.theiet.org/content/journals/10.1049/iet-its.2016.0208">http://digital-library.theiet.org/content/journals/10.1049/iet-its.2016.0208</a></td>
+      <td style="text-align: left">LSTM network: a deep learning approach for short-term traffic forecast</td>
+      <td style="text-align: right">2017</td>
+      <td style="text-align: right">58</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">118</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://trrjournalonline.trb.org/doi/abs/10.3141/1836-18">https://trrjournalonline.trb.org/doi/abs/10.3141/1836-18</a></td>
+      <td style="text-align: left">Use of Local Linear Regression Model for Short-Term Traffic Forecasting</td>
+      <td style="text-align: right">2003</td>
+      <td style="text-align: right">99</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">114</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0307904X10003409">https://www.sciencedirect.com/science/article/pii/S0307904X10003409</a></td>
+      <td style="text-align: left">Forecasting urban traffic flow by SVR with continuous ACO</td>
+      <td style="text-align: right">2011</td>
+      <td style="text-align: right">95</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">102</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://trid.trb.org/view/148123">https://trid.trb.org/view/148123</a></td>
+      <td style="text-align: left">ANALYSIS OF FREEWAY TRAFFIC TIME-SERIES DATA BY USING BOX-JENKINS TECHNIQUES</td>
+      <td style="text-align: right">1993</td>
+      <td style="text-align: right">76</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">101</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/pii/S0968090X1200109X">https://www.sciencedirect.com/science/article/pii/S0968090X1200109X</a></td>
+      <td style="text-align: left">Short-term traffic speed forecasting hybrid model based on Chaos-Wavelet Analysis-Support Vector Machine theory</td>
+      <td style="text-align: right">2013</td>
+      <td style="text-align: right">94</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">99</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/abstract/document/1716452">https://ieeexplore.ieee.org/abstract/document/1716452</a></td>
+      <td style="text-align: left">Internet Traffic Forecasting using Neural Networks</td>
+      <td style="text-align: right">2006</td>
+      <td style="text-align: right">85</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">97</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.tandfonline.com/doi/abs/10.1080/18128600902823216">https://www.tandfonline.com/doi/abs/10.1080/18128600902823216</a></td>
+      <td style="text-align: left">Traffic forecasting using least squares support vector machines</td>
+      <td style="text-align: right">2009</td>
+      <td style="text-align: right">48</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">57</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ieeexplore.ieee.org/abstract/document/7167678">https://ieeexplore.ieee.org/abstract/document/7167678</a></td>
+      <td style="text-align: left">Time-Aware Multivariate Nearest Neighbor Regression Methods for Traffic Flow Prediction</td>
+      <td style="text-align: right">2015</td>
+      <td style="text-align: right">19</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">22</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0096300316304477">https://www.sciencedirect.com/science/article/abs/pii/S0096300316304477</a></td>
+      <td style="text-align: left">Forecasting traffic time series with multivariate predicting method</td>
+      <td style="text-align: right">2016</td>
+      <td style="text-align: right">13</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">15</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.tandfonline.com/doi/abs/10.1080/15472450.2016.1147813">https://www.tandfonline.com/doi/abs/10.1080/15472450.2016.1147813</a></td>
+      <td style="text-align: left">A Comparative Study of Three Multivariate Short-Term Freeway Traffic Flow Forecasting Methods With Missing Data</td>
+      <td style="text-align: right">2016</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">12</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="finally">Finally</h2>
+
+<p>Now you are ready; just start reading documents from the beginning of this list until you feel confortable with the amount of info you get for your research.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="https://blog.babak.no/en/2007/05/22/why-and-how-to-write-the-state-of-the-art/">https://blog.babak.no/en/2007/05/22/why-and-how-to-write-the-state-of-the-art/</a></li>
+</ul>
+
+<hr>
+<div class="post-next">
+  
+  <a href="/science/flow-traffic-forecast-sota">Flow Traffic Forecast SoTA</a>
+  
+</div>
+<div class="post-prev">
+  
+  <a href="/technology/mangan-theme-installation">Mangan Theme Installation</a>
+  
+</div>
+
+<br />
+
+    </div>
+  </div>
+
+  <br />
+
+  <footer class="site-footer">
+  <div class="wrapper-fit">
+    <div class="footer-text" style="float: left; width: auto">
+      &copy; 2018 Andrés Mañas
+    </div>
+    <div class="footer-text" style="float: right; width: auto">
+      <nav class="site-nav">
+  <a href="#" class="menu-icon">
+    <svg viewBox="0 0 18 15">
+      <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
+      <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
+      <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
+    </svg>
+  </a>
+
+  <div class="trigger">
+
+
+    <a class="page-link" href="/">Home</a>
+
+    <a class="page-link" href="/about">About</a>
+
+    <a class="page-link" href="/contact">Contact</a>
+
+
+
+
+    <a class="page-link" href="https://www.kaggle.com/amanas" target="_blank">
+      <span class="icon  icon--kaggle">
+        <svg viewBox="0 0 24 24">
+          <path fill="black" d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.358" />
+        </svg>
+      </span>
+    </a>
+
+
+
+
+    <a class="page-link" href="https://stackoverflow.com/users/482217/amanas" target="_blank">
+      <span class="icon  icon--stackoverflow">
+        <svg viewBox="0 0 384 512">
+          <path fill="#000000" d="M293.7 300l-181.2-84.5 16.7-36.5 181.3 84.7-16.8 36.3zm48-76L188.2 95.7l-25.5 30.8 153.5 128.3 25.5-30.8zm39.6-31.7L262 32l-32 24 119.3 160.3 32-24zM290.7 311L95 269.7 86.8 309l195.7 41 8.2-39zm31.6 129H42.7V320h-40v160h359.5V320h-40v120zm-39.8-80h-200v39.7h200V360z" />
+        </svg>
+      </span>
+    </a>
+
+    <a class="page-link" href="https://github.com/amanas" target="_blank">
+      <span class="icon  icon--github">
+        <svg viewBox="0 0 16 16">
+          <path fill="#000000" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z" />
+        </svg>
+      </span>
+    </a>
+
+    <a class="page-link" href="https://www.linkedin.com/in/andresmanas/" target="_blank">
+      <span class="icon  icon--linkedin">
+        <svg viewBox="0 0 448 512">
+          <path fill="#000000" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+        </svg>
+      </span>
+    </a>
+  </div>
+</nav>
+
+    </div>
+  </div>
+</footer>
+
+  <script type="text/javascript" src="/js/min.js"></script>
+</body>
+
+</html>
