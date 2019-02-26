@@ -4,7 +4,7 @@ layout: layout
     <header class="post-header">
       <h1 class="post-title">{{ page.title }}</h1>
       <div class="post-detail">
-        {{ page.date | date: "%-d %b %Y" }}{% if page.author %} • Written by <a href="https://github.com/{{  site.social_username }}" target="_blank">{{ page.author }}</a>{% endif %}{% if page.meta %} {{ page.meta }}{% endif %}
+        {{ page.date | date: "%-d %b %Y" }}{% if page.author %} • Written by <a href="https://github.com/{{  site.social_username }}" target="_blank" rel="noopener">{{ page.author }}</a>{% endif %}{% if page.meta %} {{ page.meta }}{% endif %}
       </div>
       <div class="post-line"></div>
     </header>
