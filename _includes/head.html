@@ -1,33 +1,24 @@
-  <head>
-    <meta charset="UTF-8">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="{{ site.author }}">
-    <meta name="HandheldFriendly" content="True">
-    <!--space-->{% capture description %}{% if page.description %}{{ page.description }}{% elsif page.title %}{{ content | raw_content }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
-    <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
-    <!--space-->{% capture keywords %}{% if page.keywords %}{{ page.keywords }}{% elsif page.title %}{{""}}{% else %}{{ site.keywords }}{% endif %}{% endcapture %}
-    <meta name="keywords" content="{{ keywords | strip_html | condense_spaces }}">
-    <meta name="rating" content="general">
-    <meta name="robots" content="index,follow">
-    <meta name="revisit-after" content="2 days">
-    <meta name="language" content="Indonesian, English">
-    <meta name="distribution" content="Global">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
-    <meta property="og:image" content="http://i.imgbox.com/FVXzVeXv.png">
-    <meta property="twitter:site" content="@{{ site.social_username }}">
-    <meta property="twitter:site:id" content="2667578047">
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="twitter:description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
-    <meta property="twitter:image:src" content="http://i.imgbox.com/FVXzVeXv.png">
-    <link href="{{ "/css/main.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
-    <link href="https://plus.google.com/+{{ site.social_username }}" rel="author">
-    <link href="https://plus.google.com/+{{ site.social_username }}" rel="publisher">
-    <link href="/favicon.png" rel="icon">
-    <link href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel="canonical">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">{% capture description %}{% if page.description %}{{ page.description }}{% elsif page.title %}{{ content | raw_content }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+  <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">{% capture keywords %}{% if page.keywords %}{{ page.keywords }}{% elsif page.title %}{{""}}{% else %}{{ site.keywords }}{% endif %}{% endcapture %}
+  <meta name="keywords" content="{{ keywords | strip_html | condense_spaces }}">
+  <meta name="author" content="{{ site.name }}">
+  <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="@{{ site.social_username }}">
+  <meta property="twitter:creator" content="@{{ site.social_username }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
+  <meta property="og:image" content="{{ '/images/thumbnail.png' | absolute_url }}">
+  <meta name="theme-color" content="#f5f5f5">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#f5f5f5">
+  <link rel="stylesheet" href="{{ '/css/mangan.css' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" href="{{ '/feed.xml' | absolute_url }}" type="application/rss+xml" title="{{ site.title }}">
+</head>
