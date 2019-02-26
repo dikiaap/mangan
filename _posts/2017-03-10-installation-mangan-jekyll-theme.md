@@ -47,7 +47,7 @@ Visit your website now and custom what you want! :sparkles:
 
 ## What's in there?
 
- * Load fast
+ * Fast website
  * Emoji support
  * Geek theme
  * Instagram view
