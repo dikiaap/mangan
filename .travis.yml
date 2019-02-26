@@ -3,11 +3,17 @@ language: ruby
 git:
   depth: 10
 
+os:
+  - linux
+  - osx
+
+dist: xenial
+
 rvm:
+  - 2.6
   - 2.5
   - 2.4
   - 2.3
-  - 2.2
 
 branches:
   only:

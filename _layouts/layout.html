@@ -1,42 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 {% include head.html %}
-  <!--
-                _____________________
-                |###################|
-                |###################|
-                |###################|
-                |###################|
-    ((- - - - - - - - - - - - - - - - - - - - -
-    | \         /  /@@ \      /@@ \  \
-     \ \,      /  (     )    (     )  \             _____
-      \ \      |   \___/      \___/   |            /  __ \
-       \ ""*-__/                      \            | |  | |
-        ""*-_                         "-_          | |  """
-             \    -.  _________   .-   __"-.__. -((  ))
-              \,    \^    U    ^/     /  "-___- -((  ))
-                \,   \         /    /'             | |
-                 |    \       /   /'               | |
-                 |     "- - -"    \                | |
-                /                  "*-._           | |
-               /   /\          /*-._    \          | |
-              /   /  "\______/"     /   /          | |
-             /   /                 /   /           | |
-            /. ./                  |. .|           """
-           /  | |                  / | \
-          /   |  \                /  |  \
-         /.-./.-.|               /.-.|.-.\
-  -->
-  <body>
+<body>
 {% include header.html %}
-  <div class="page-content">
-    <div class="wrapper-fit">
+<div class="page-content">
+  <div class="wrapper-fit">
 {{ content }}
-    </div>
-    {% include nav.html %}
   </div>
+  {% include nav.html %}
+</div>
 {% include footer.html %}
-  <script type="text/javascript" src="{{ "/js/min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ '/js/main.js' | relative_url }}"></script>
 {% include ga.html %}
- </body>
+</body>
 </html>

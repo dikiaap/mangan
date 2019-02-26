@@ -1,56 +1,54 @@
 ---
 layout: default
 ---
-      <div class="home">
-        <div class="content-col-wrapper">
-          <div class="content-col">
-            <div class="dummy">
-              <b><span class="big">Hi!</span></b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil, velit odio quia autem quos. Natus itaque sint, nisi fuga dolorum. Iste ea cumque, aliquam dignissimos vitae labore atque minima?
-              <a href="mailto:{{ site.email }}"><b>{{ site.email }}</b></a>. <br><br>
-              ♨ <b><span class="big">Fun pict ... </span></b><br>
-
-              <div class="photos">
-                <a href="https://www.instagram.com/p/BCI1dwchQX5/" class="p0 photo" target="_blank">
-                  <img alt="Vectisaurus Fruitadens Rajasaurus Empaterias." src="{{ site.baseurl }}/images/ig_1.jpg">
-                </a>
-                <a href="https://www.instagram.com/p/BCI1dwchQX5/" class="p1 photo" target="_blank">
-                  <img alt="Zombie ipsum reversus ab viral inferno." src="{{ site.baseurl }}/images/ig_2.jpg">
-                </a>
-                <a href="https://www.instagram.com/p/BCI1dwchQX5/" class="p2 photo" target="_blank">
-                  <img alt="Marshmallow cookie jelly beans cake brownie." src="{{ site.baseurl }}/images/ig_3.jpg">
-                </a>
-                <a href="https://www.instagram.com/p/BCI1dwchQX5/" class="p3 photo" target="_blank">
-                  <img alt="Lorem ipsum dolor sit amet." src="{{ site.baseurl }}/images/ig_4.jpg">
-                </a>
-                <a href="https://www.instagram.com/p/BCI1dwchQX5/" class="p4 photo" target="_blank">
-                  <img alt="Lewisuchus Poekilopleuron Opisthocoelicaudia Xixiasaurus." src="{{ site.baseurl }}/images/ig_5.jpg">
-                </a>
-                <div class="caption c0">Vectisaurus Fruitadens Rajasaurus Empaterias.</div>
-                <div class="caption c1">Zombie ipsum reversus ab viral inferno.</div>
-                <div class="caption c2">Marshmallow cookie jelly beans cake brownie.</div>
-                <div class="caption c3">Lorem ipsum dolor sit amet.</div>
-                <div class="caption c4">Lewisuchus Poekilopleuron Opisthocoelicaudia Xixiasaurus.</div>
-              </div><br>
-
-              <div class="dummy blogpost">
-                ✍ <b><span class="big">Writings.</span></b>
-              </div>
-            </div><p></p><p></p>
-              <ul class="post-list">{% for post in paginator.posts %}
-                <li class="titlepost">
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </li>
-                <li class="datepost">
-                  <span class="post-meta">{{ post.date | date: "%-d %b %Y" }}</span>
-                </li>{% endfor %}
-              </ul>
-          </div>
-        </div>{% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}">
-            <b><span class="big">Balik Lagi</span></b>
-          </a>{% else %}{% endif %}{% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}">
-            <b><span class="big">Lanjut</span></b>
-          </a>{% else %}{% endif %}
-        {% include nav.html %}
-      </div>
+    <div class="home">
+      <div class="content-col-wrapper">
+        <div class="content-col">
+          <div class="dummy">
+            <b><span class="big">Hi!</span></b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil, velit odio quia autem quos. Natus itaque sint, nisi fuga dolorum. Iste ea cumque, aliquam dignissimos vitae labore atque minima?
+            <a href="mailto:{{ site.email }}"><b>{{ site.email }}</b></a>.<br><br>
+            ♨ <b><span class="big">Fun pict ...</span></b><br>
+            <div class="photos">
+              <a href="https://www.instagram.com/p/BCI1dwchQX5/" class="p0 photo" target="_blank" rel="noopener">
+                <img alt="Vectisaurus Fruitadens Rajasaurus Empaterias." src="{{ '/images/ig_1.jpg' | relative_url }}">
+              </a>
+              <a href="https://www.instagram.com/p/BCI1dwchQX5/" class="p1 photo" target="_blank" rel="noopener">
+                <img alt="Zombie ipsum reversus ab viral inferno." src="{{ '/images/ig_2.jpg' | relative_url }}">
+              </a>
+              <a href="https://www.instagram.com/p/BCI1dwchQX5/" class="p2 photo" target="_blank" rel="noopener">
+                <img alt="Marshmallow cookie jelly beans cake brownie." src="{{ '/images/ig_3.jpg' | relative_url }}">
+              </a>
+              <a href="https://www.instagram.com/p/BCI1dwchQX5/" class="p3 photo" target="_blank" rel="noopener">
+                <img alt="Lorem ipsum dolor sit amet." src="{{ '/images/ig_4.jpg' | relative_url }}">
+              </a>
+              <a href="https://www.instagram.com/p/BCI1dwchQX5/" class="p4 photo" target="_blank" rel="noopener">
+                <img alt="Lewisuchus Poekilopleuron Opisthocoelicaudia Xixiasaurus." src="{{ '/images/ig_5.jpg' | relative_url }}">
+              </a>
+              <div class="caption c0">Vectisaurus Fruitadens Rajasaurus Empaterias.</div>
+              <div class="caption c1">Zombie ipsum reversus ab viral inferno.</div>
+              <div class="caption c2">Marshmallow cookie jelly beans cake brownie.</div>
+              <div class="caption c3">Lorem ipsum dolor sit amet.</div>
+              <div class="caption c4">Lewisuchus Poekilopleuron Opisthocoelicaudia Xixiasaurus.</div>
+            </div><br>
+            <div class="dummy blogpost">
+              ✍ <b><span class="big">Writings.</span></b>
+            </div>
+          </div><p></p><p></p>
+            <ul class="post-list">{% for post in paginator.posts %}
+              <li class="titlepost">
+                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </li>
+              <li class="datepost">
+                <span class="post-meta">{{ post.date | date_to_string }}</span>
+              </li>{% endfor %}
+            </ul>
+        </div>
+      </div>{% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}">
+        <b><span class="big">Previous page</span></b>
+      </a>{% else %}{% endif %}{% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}">
+        <b><span class="big">Next page</span></b>
+      </a>{% else %}{% endif %}
+      {% include nav.html %}
+    </div>

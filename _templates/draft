@@ -2,8 +2,9 @@
 layout: {{ layout }}
 title: "{{ title }}"
 date: {{ date }}
-author: dikiaap
+author: username
 sitemap: false
 keywords: ""
 description: ""
 ---
+<!--more-->

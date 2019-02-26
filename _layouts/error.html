@@ -1,7 +1,16 @@
----
-layout: layouterror
----
-
-<article class="post-content">
-  {{ content }}
-</article>
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+{% include header.html %}
+<div class="page-content">
+  <div class="wrapper-fit">
+    <article class="post-content">
+{{ content }}
+    </article>
+  </div>
+</div>
+<script src="{{ '/js/main.js' | relative_url }}"></script>
+{% include ga.html %}
+</body>
+</html>
