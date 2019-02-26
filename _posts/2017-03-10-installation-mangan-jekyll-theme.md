@@ -9,8 +9,8 @@ description: "Installation Mangan Jekyll Theme"
 ---
 # Mangan
 
-[![Build Status](https://img.shields.io/travis/com/dikiaap/mangan/master.svg?style=flat-square&logo=travis)](https://travis-ci.com/dikiaap/mangan)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
+[![Build Status](https://img.shields.io/travis/com/dikiaap/mangan/master.svg?logo=travis)](https://travis-ci.com/dikiaap/mangan)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 ![Mangan Jekyll Theme](https://files.dikiaap.id/img/open-source/mangan_preview.png)
 
