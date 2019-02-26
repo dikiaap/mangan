@@ -1,40 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-  <!--
-                _____________________
-                |###################|
-                |###################|
-                |###################|
-                |###################|
-    ((- - - - - - - - - - - - - - - - - - - - -
-    | \         /  /@@ \      /@@ \  \
-     \ \,      /  (     )    (     )  \             _____
-      \ \      |   \___/      \___/   |            /  __ \
-       \ ""*-__/                      \            | |  | |
-        ""*-_                         "-_          | |  """
-             \    -.  _________   .-   __"-.__. -((  ))
-              \,    \^    U    ^/     /  "-___- -((  ))
-                \,   \         /    /'             | |
-                 |    \       /   /'               | |
-                 |     "- - -"    \                | |
-                /                  "*-._           | |
-               /   /\          /*-._    \          | |
-              /   /  "\______/"     /   /          | |
-             /   /                 /   /           | |
-            /. ./                  |. .|           """
-           /  | |                  / | \
-          /   |  \                /  |  \
-         /.-./.-.|               /.-.|.-.\
-  -->
-  <body>
+<body>
 {% include header.html %}
-  <div class="page-content">
-    <div class="wrapper">
+<div class="page-content">
+  <div class="wrapper">
 {{ content }}
-    </div>
   </div>
+</div>
 {% include footer.html %}
-  <script src="{{ '/js/main.js' | relative_url }}"></script>
- </body>
+<script src="{{ '/js/main.js' | relative_url }}"></script>
+</body>
 </html>

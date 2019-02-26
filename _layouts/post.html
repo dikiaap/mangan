@@ -8,11 +8,11 @@ layout: layout
       </div>
       <div class="post-line"></div>
     </header>
-      {{ content }}
-      <hr>
-      <div class="post-next">{% if page.next %}
-          <a href="{{ page.next.url }}">{{ page.next.title }}</a>{% endif %}
-      </div>
-      <div class="post-prev">{% if page.previous %}
-          <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>{% endif %}
-      </div>
+    {{ content }}
+    <hr>
+    <div class="post-next">{% if page.next %}
+      <a href="{{ page.next.url }}">{{ page.next.title }}</a>{% endif %}
+    </div>
+    <div class="post-prev">{% if page.previous %}
+      <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>{% endif %}
+    </div>
