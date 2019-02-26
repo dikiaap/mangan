@@ -34,14 +34,14 @@ layout: default
               ✍ <b><span class="big">Writings.</span></b>
             </div>
           </div><p></p><p></p>
-            <ul class="post-list">{% for post in paginator.posts %}
-              <li class="titlepost">
-                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </li>
-              <li class="datepost">
-                <span class="post-meta">{{ post.date | date_to_string }}</span>
-              </li>{% endfor %}
-            </ul>
+          <ul class="post-list">{% for post in paginator.posts %}
+            <li class="titlepost">
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </li>
+            <li class="datepost">
+              <span class="post-meta">{{ post.date | date_to_string }}</span>
+            </li>{% endfor %}
+          </ul>
         </div>
       </div>{% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path }}">

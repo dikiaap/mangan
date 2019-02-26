@@ -2,18 +2,17 @@
 # Mangan sass file ...
 ---
 /*!
- * Mangan v1.3.4
- * Copyright 2015-2018 Diki Ananta
+ * Mangan v1.4
+ * Copyright 2015-2019 Diki Ananta
  * Released under the MIT license
  */
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono|VT323|Halant") screen;
 
 // Font family ...
-$base-font-family:  VT323, sans-serif;
-$cutive:            "Cutive Mono", sans-serif;
-$halant:            Halant, sans-serif;
-$vt323:             VT323, sans-serif;
+$cutive:  "Cutive Mono", sans-serif;
+$halant:  Halant, sans-serif;
+$vt323:   VT323, sans-serif;
 
 // Sizes ...
 $base-font-size:   16.5px;
@@ -22,7 +21,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 // Color ...
-$dark-color-aap:   #2D2D2D;
+$dark-color:       #2D2D2D;
 $link-color:       #3c4245;
 $link-hover-color: #151617;
 $background-color: #F9F9F9;
