@@ -108,7 +108,7 @@
  * 404 Style
  */
 .badface {
-    opactiy: 0;
+    opacity: 0;
     animation: bad 3s;
     animation-iteration-count: infinite;
     position: relative;
@@ -304,7 +304,6 @@
 
 @include media-query($on-palm) {
     .content-col {
-        float: center;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
