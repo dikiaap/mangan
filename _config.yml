@@ -5,7 +5,6 @@ name: Your name
 title: Mangan Jekyll Theme
 email: example@domain.com
 author: username
-baseurl: ""
 keywords: "Your, Keyword, Here"
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil, velit odio quia autem quos. Natus itaque sint, nisi fuga dolorum. Iste ea cumque, aliquam dignissimos vitae labore atque minima?"
 social_username: username
@@ -14,13 +13,13 @@ social_username: username
 sass:
   style: compressed
 markdown: kramdown
-encoding: "utf-8"
 paginate: 5
 permalink: /post/:title
 paginate_path: "/page/:num/"
+exclude:
+  - README.md
 
 # Plugins ...
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
   - jemoji
