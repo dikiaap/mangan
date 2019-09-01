@@ -13,7 +13,6 @@ rvm:
   - 2.6
   - 2.5
   - 2.4
-  - 2.3
 
 branches:
   only:
@@ -23,8 +22,7 @@ before_install:
   - gem update --system
 
 install:
-  - gem install jekyll jekyll-paginate jekyll-sitemap jemoji octopress
-  - octopress new post "Your post"
+  - gem install jekyll jekyll-paginate jekyll-sitemap jemoji
 
 script:
   - jekyll clean

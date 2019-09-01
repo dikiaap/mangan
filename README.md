@@ -6,7 +6,7 @@
 ![Mangan Jekyll Theme](https://files.dikiaap.id/img/open-source/mangan_preview.png)
 
 ## Requirements
-- Ruby >= 2.3
+- Ruby >= 2.4
 - RubyGems
 - Linux, Unix, or Mac OS X
 - Git
@@ -18,9 +18,7 @@ Fork, then rename to `username.github.io`, and clone to your computer.
 ```shell
 git clone https://github.com/username/username.github.io
 cd username.github.io
-sudo gem install jekyll jekyll-paginate jekyll-sitemap
-sudo gem install jemoji octopress
-octopress new post "Your post"
+sudo gem install jekyll jekyll-paginate jekyll-sitemap jemoji
 jekyll build
 jekyll serve
 ```
