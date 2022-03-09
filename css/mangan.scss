@@ -2,8 +2,8 @@
 # Mangan sass file ...
 ---
 /*!
- * Mangan v1.4
- * Copyright 2015-2019 Diki Ananta
+ * Mangan v1.4.1
+ * Copyright 2015-2022 Diki Ananta
  * Released under the MIT license
  */
 @charset "utf-8";
@@ -21,13 +21,13 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 // Color ...
-$dark-color:       #2D2D2D;
+$dark-color:       #2d2d2d;
 $link-color:       #3c4245;
 $link-hover-color: #151617;
-$background-color: #F9F9F9;
+$background-color: #f9f9f9;
 $grey-color:       #828282;
 $date-color:       #626262;
-$github-color:     #4A4A4A;
+$github-color:     #4a4a4a;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 

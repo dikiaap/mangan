@@ -9,15 +9,15 @@ description: "Installation Mangan Jekyll Theme"
 ---
 # Mangan
 
-[![Build Status](https://img.shields.io/travis/com/dikiaap/mangan/master.svg?logo=travis)](https://travis-ci.com/dikiaap/mangan)
+[![Build Status](https://github.com/dikiaap/mangan/workflows/build/badge.svg)](https://github.com/dikiaap/mangan/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 ![Mangan Jekyll Theme](https://files.dikiaap.id/img/open-source/mangan_preview.png)
 
 ## Requirements
-- Ruby >= 2.3
+- Ruby >= 3.1
 - RubyGems
-- Linux, Unix, or Mac OS X
+- Linux, Unix, or macOS
 - Git
 
 ## Install
@@ -27,9 +27,7 @@ Fork, then rename to `username.github.io`, and clone to your computer.
 ```shell
 git clone https://github.com/username/username.github.io
 cd username.github.io
-sudo gem install jekyll jekyll-paginate jekyll-sitemap
-sudo gem install jemoji octopress
-octopress new post "Your post"
+sudo gem install jekyll jekyll-paginate jekyll-sitemap jemoji
 jekyll build
 jekyll serve
 ```
