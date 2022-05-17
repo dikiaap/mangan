@@ -1,0 +1,13 @@
+<script>
+  if (navigator.doNotTrack !== '1') {
+    (function () {
+      window.goatcounter = { endpoint: 'https://mangan.goatcounter.com/count' }
+      var gc = document.createElement('script');
+      gc.type = 'text/javascript';
+      gc.async = true;
+      gc.src = 'https://gc.zgo.at/count.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gc, s);
+    })();
+  }
+</script>
