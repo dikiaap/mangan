@@ -6,7 +6,7 @@
 ![Mangan Jekyll Theme](https://dikiaap.pages.dev/img/open-source/mangan_preview.png)
 
 ## Requirements
-- Ruby >= 3.1
+- Ruby >= 3.2
 - RubyGems
 - Linux, Unix, or macOS
 - Git
