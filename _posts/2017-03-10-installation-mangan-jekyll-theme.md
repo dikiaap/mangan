@@ -12,7 +12,7 @@ description: "Installation Mangan Jekyll Theme"
 [![Build Status](https://github.com/dikiaap/mangan/workflows/build/badge.svg)](https://github.com/dikiaap/mangan/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
-![Mangan Jekyll Theme](https://files.dikiaap.id/img/open-source/mangan_preview.png)
+![Mangan Jekyll Theme](https://dikiaap.pages.dev/img/open-source/mangan_preview.png)
 
 ## Requirements
 - Ruby >= 3.1
@@ -56,10 +56,10 @@ Visit your website now and custom what you want! :sparkles:
 
 ## Demo
 
-See demo [here](https://mangan.dikiaap.id).
+See demo [here](https://mangan.pages.dev).
 
 More features? you can visit [Jekyll Docs](https://jekyllrb.com/docs/).
 
 ## License
 
-MIT © [Diki Ananta](https://dikiaap.id)
+MIT © Diki Ananta
