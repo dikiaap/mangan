@@ -255,7 +255,7 @@
     font-family: $cutive;
     width: 90%;
     float: left;
-    padding-top: $spacing-unit / 6;
+    padding-top: calc($spacing-unit / 6);
 }
 
 .datepost {
@@ -264,21 +264,21 @@
     width: 100px;
     float: left;
     border-bottom: 1px dashed #e1e2e3;
-    padding-top: $spacing-unit / 6;
+    padding-top: calc($spacing-unit / 6);
     text-align: left;
 }
 
 .content-col-wrapper {
-    font-size: $spacing-unit / 2;
+    font-size: calc($spacing-unit / 2);
     color: #6c6c6c;
-    margin-left: -$spacing-unit / 2;
+    margin-left: calc($spacing-unit / -2);
     @extend %clearfix;
 }
 
 .content-col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    margin-bottom: calc($spacing-unit / 2);
+    padding-left: calc($spacing-unit / 2);
     width: 95%;
 }
 
@@ -397,20 +397,20 @@
 
 .footer-heading {
     font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: calc($spacing-unit / 2);
 }
 
 .footer-col-wrapper {
     font-size: 15px;
     color: #4b4b4b;
-    margin-left: -$spacing-unit / 2;
+    margin-left: calc($spacing-unit / -2);
     @extend %clearfix;
 }
 
 .footer-col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    margin-bottom: calc($spacing-unit / 2);
+    padding-left: calc($spacing-unit / 2);
 }
 
 @include media-query($on-palm) {
